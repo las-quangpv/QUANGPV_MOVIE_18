@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="PDetailCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o0L-7N-NSZ">
+                        <rect key="frame" x="20" y="15.5" width="104" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="PbI-JO-71h"/>
+                            <constraint firstAttribute="height" constant="130" id="Ysl-b4-bF7"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCR-Tj-exZ">
+                        <rect key="frame" x="144" y="15.5" width="171" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-uP-UPf">
+                                <rect key="frame" x="0.0" y="15" width="171" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FTg-q9-kph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-vZ-JRZ">
+                                <rect key="frame" x="0.0" y="75" width="171" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Zia-3l-mVI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P6x-vZ-JRZ" firstAttribute="leading" secondItem="hCR-Tj-exZ" secondAttribute="leading" id="DCd-Uc-VsL"/>
+                            <constraint firstItem="Y9M-uP-UPf" firstAttribute="leading" secondItem="hCR-Tj-exZ" secondAttribute="leading" id="GfB-uN-XAJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9M-uP-UPf" secondAttribute="trailing" id="NiY-ng-WRx"/>
+                            <constraint firstItem="Y9M-uP-UPf" firstAttribute="top" secondItem="hCR-Tj-exZ" secondAttribute="top" constant="15" id="Rmq-jn-t7Q"/>
+                            <constraint firstAttribute="trailing" secondItem="P6x-vZ-JRZ" secondAttribute="trailing" id="drc-6j-XeR"/>
+                            <constraint firstItem="P6x-vZ-JRZ" firstAttribute="top" secondItem="Y9M-uP-UPf" secondAttribute="bottom" constant="10" id="jPy-ju-nql"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="o0L-7N-NSZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qo8-ri-fG1"/>
+                    <constraint firstItem="hCR-Tj-exZ" firstAttribute="bottom" secondItem="o0L-7N-NSZ" secondAttribute="bottom" id="Z8H-uo-0So"/>
+                    <constraint firstItem="hCR-Tj-exZ" firstAttribute="leading" secondItem="o0L-7N-NSZ" secondAttribute="trailing" constant="20" id="hDp-do-lsa"/>
+                    <constraint firstItem="hCR-Tj-exZ" firstAttribute="top" secondItem="o0L-7N-NSZ" secondAttribute="top" id="mfy-BB-rON"/>
+                    <constraint firstItem="o0L-7N-NSZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vxR-QW-mMj"/>
+                    <constraint firstAttribute="trailing" secondItem="hCR-Tj-exZ" secondAttribute="trailing" constant="20" id="xkw-eD-nDs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="birthdayLabel" destination="P6x-vZ-JRZ" id="tfB-3V-zWu"/>
+                <outlet property="posterImage" destination="o0L-7N-NSZ" id="QKN-qI-TM5"/>
+                <outlet property="titleLabel" destination="Y9M-uP-UPf" id="Z7X-1w-jPf"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="116.85267857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

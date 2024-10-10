@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MorePopupVC" customModule="Movie018" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAdd" destination="uzk-KJ-vAi" id="j7J-Um-CHh"/>
+                <outlet property="btnCancel" destination="P2r-iB-yNQ" id="u8S-UE-tyb"/>
+                <outlet property="btnEdit" destination="t2a-R6-nRS" id="ARK-ey-wze"/>
+                <outlet property="btnShare" destination="HIB-mQ-n1o" id="7m3-Qa-nmV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isb-Hw-ng0" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="660" width="393" height="192"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3yr-cp-MH8">
+                            <rect key="frame" x="0.0" y="24" width="393" height="112"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2a-R6-nRS">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="uMK-RC-TE2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Edit">
+                                        <color key="titleColor" red="0.38431372549019605" green="0.60784313725490191" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionEdit:" destination="-1" eventType="touchUpInside" id="yNx-1Z-hvj"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-KJ-vAi">
+                                    <rect key="frame" x="0.0" y="36" width="393" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="QyE-yV-NBH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Add to playlist">
+                                        <color key="titleColor" red="0.38431372549999998" green="0.60784313729999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionPlaylist:" destination="-1" eventType="touchUpInside" id="Ws1-pI-X3r"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-mQ-n1o">
+                                    <rect key="frame" x="0.0" y="40" width="393" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="MsG-0F-gpi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Share">
+                                        <color key="titleColor" red="0.38431372549999998" green="0.60784313729999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionShare:" destination="-1" eventType="touchUpInside" id="oyc-tn-m6x"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2r-iB-yNQ">
+                                    <rect key="frame" x="0.0" y="80" width="393" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="fcS-pB-0XY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.38431372549999998" green="0.60784313729999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="1gb-Zz-Wdi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078431372551" green="1" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3yr-cp-MH8" secondAttribute="trailing" id="0JX-I2-nSv"/>
+                        <constraint firstItem="3yr-cp-MH8" firstAttribute="leading" secondItem="Isb-Hw-ng0" secondAttribute="leading" id="NnJ-eD-crt"/>
+                        <constraint firstAttribute="bottom" secondItem="3yr-cp-MH8" secondAttribute="bottom" constant="56" id="Vj5-us-A1z"/>
+                        <constraint firstItem="3yr-cp-MH8" firstAttribute="top" secondItem="Isb-Hw-ng0" secondAttribute="top" constant="24" id="aIt-Qd-mMS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Isb-Hw-ng0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Thd-9d-Nnw"/>
+                <constraint firstAttribute="bottom" secondItem="Isb-Hw-ng0" secondAttribute="bottom" id="Xfc-sP-1VR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Isb-Hw-ng0" secondAttribute="trailing" id="jeI-GI-sg3"/>
+            </constraints>
+            <point key="canvasLocation" x="-76" y="20"/>
+        </view>
+    </objects>
+</document>

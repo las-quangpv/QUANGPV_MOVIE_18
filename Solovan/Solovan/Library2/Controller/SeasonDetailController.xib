@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeasonDetailController" customModule="Solovan" customModuleProvider="target">
+            <connections>
+                <outlet property="seasonLabel" destination="2no-3K-AcV" id="Rig-Co-wB4"/>
+                <outlet property="seasonListLabel" destination="hOf-Lw-rnI" id="DHx-hh-Udo"/>
+                <outlet property="seasonTableView" destination="n2i-W1-bnV" id="mSW-Jt-aLV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-nh-bL7">
+                    <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-G3-KbO">
+                            <rect key="frame" x="16" y="1" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Jcw-CS-n6i"/>
+                                <constraint firstAttribute="width" constant="48" id="ycP-TL-hB1"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_back_black"/>
+                            <connections>
+                                <action selector="backHandler:" destination="-1" eventType="touchUpInside" id="t3c-N0-nLb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2no-3K-AcV">
+                            <rect key="frame" x="80" y="10" width="254" height="30"/>
+                            <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="24"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2no-3K-AcV" firstAttribute="leading" secondItem="i1N-G3-KbO" secondAttribute="trailing" constant="16" id="4ht-Om-fbu"/>
+                        <constraint firstAttribute="height" constant="50" id="4np-TZ-iOE"/>
+                        <constraint firstAttribute="trailing" secondItem="2no-3K-AcV" secondAttribute="trailing" constant="80" id="LPR-CD-J3f"/>
+                        <constraint firstItem="i1N-G3-KbO" firstAttribute="leading" secondItem="6h9-nh-bL7" secondAttribute="leading" constant="16" id="MkF-U3-zTj"/>
+                        <constraint firstItem="i1N-G3-KbO" firstAttribute="centerY" secondItem="6h9-nh-bL7" secondAttribute="centerY" id="Zbn-I1-uk9"/>
+                        <constraint firstItem="2no-3K-AcV" firstAttribute="centerY" secondItem="6h9-nh-bL7" secondAttribute="centerY" id="aJR-k1-UC3"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="n2i-W1-bnV">
+                    <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-Lw-rnI">
+                    <rect key="frame" x="20" y="98" width="374" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Jhi-Ha-YUr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6h9-nh-bL7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0vm-8b-QNL"/>
+                <constraint firstItem="hOf-Lw-rnI" firstAttribute="top" secondItem="6h9-nh-bL7" secondAttribute="bottom" id="2Qa-qh-8wQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6h9-nh-bL7" secondAttribute="trailing" id="7Ba-dE-8dz"/>
+                <constraint firstItem="n2i-W1-bnV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8pf-I5-OZv"/>
+                <constraint firstItem="n2i-W1-bnV" firstAttribute="top" secondItem="hOf-Lw-rnI" secondAttribute="bottom" id="W64-Ps-cMm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n2i-W1-bnV" secondAttribute="trailing" id="W6z-Hg-yVt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hOf-Lw-rnI" secondAttribute="trailing" constant="20" id="gT0-Ck-E3L"/>
+                <constraint firstItem="6h9-nh-bL7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hFw-w8-Y7U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="n2i-W1-bnV" secondAttribute="bottom" id="k6V-jh-gZN"/>
+                <constraint firstItem="hOf-Lw-rnI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yzn-da-7E9"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_black" width="24" height="20"/>
+    </resources>
+</document>

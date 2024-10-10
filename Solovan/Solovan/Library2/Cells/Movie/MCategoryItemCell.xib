@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MCategoryItemCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-mM-Psh">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="108"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-dk-uZo">
+                        <rect key="frame" x="0.0" y="108" width="95" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Stx-Yk-Usy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-SemiBold" family="Lexend Deca" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hPB-dk-uZo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="88s-Ls-8WF"/>
+                <constraint firstItem="mCV-mM-Psh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9pv-yO-Zrd"/>
+                <constraint firstAttribute="bottom" secondItem="hPB-dk-uZo" secondAttribute="bottom" id="HSc-u8-8D9"/>
+                <constraint firstItem="hPB-dk-uZo" firstAttribute="top" secondItem="mCV-mM-Psh" secondAttribute="bottom" id="cSL-JW-YeW"/>
+                <constraint firstItem="mCV-mM-Psh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hJW-Hc-SRP"/>
+                <constraint firstAttribute="trailing" secondItem="mCV-mM-Psh" secondAttribute="trailing" id="kqR-dR-DNb"/>
+                <constraint firstAttribute="trailing" secondItem="hPB-dk-uZo" secondAttribute="trailing" id="xLv-8A-4V2"/>
+            </constraints>
+            <size key="customSize" width="146" height="101"/>
+            <connections>
+                <outlet property="categoryImage" destination="mCV-mM-Psh" id="Zxp-Ec-wwm"/>
+                <outlet property="categoryName" destination="hPB-dk-uZo" id="Olw-Jn-5RA"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="65.290178571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

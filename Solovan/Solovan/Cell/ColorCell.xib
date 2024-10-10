@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorCell" customModule="Movie018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD1-lc-kyV" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_color" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-67-U5r">
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="84"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tick" translatesAutoresizingMaskIntoConstraints="NO" id="lXS-XR-Dqg">
+                                <rect key="frame" x="38.666666666666664" y="34" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="H6e-1l-kY0"/>
+                                    <constraint firstAttribute="height" constant="16" id="deE-bp-zxA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LOy-67-U5r" secondAttribute="trailing" id="35k-gH-5Ok"/>
+                            <constraint firstAttribute="bottom" secondItem="LOy-67-U5r" secondAttribute="bottom" id="7Eq-OY-PXh"/>
+                            <constraint firstItem="LOy-67-U5r" firstAttribute="top" secondItem="rD1-lc-kyV" secondAttribute="top" id="DUx-PB-aNg"/>
+                            <constraint firstItem="LOy-67-U5r" firstAttribute="leading" secondItem="rD1-lc-kyV" secondAttribute="leading" id="I9d-1P-o9m"/>
+                            <constraint firstItem="lXS-XR-Dqg" firstAttribute="centerX" secondItem="rD1-lc-kyV" secondAttribute="centerX" id="hAc-aH-PEf"/>
+                            <constraint firstItem="lXS-XR-Dqg" firstAttribute="centerY" secondItem="rD1-lc-kyV" secondAttribute="centerY" id="zzG-ni-6id"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.38431372549019605" green="0.60784313725490191" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rD1-lc-kyV" secondAttribute="bottom" id="1IR-dc-8Ap"/>
+                <constraint firstAttribute="trailing" secondItem="rD1-lc-kyV" secondAttribute="trailing" id="eM0-Ux-FdM"/>
+                <constraint firstItem="rD1-lc-kyV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fnB-Wy-ZAP"/>
+                <constraint firstItem="rD1-lc-kyV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ttQ-nf-002"/>
+            </constraints>
+            <size key="customSize" width="93" height="84"/>
+            <connections>
+                <outlet property="boderView" destination="rD1-lc-kyV" id="F8p-zA-mZC"/>
+                <outlet property="iv" destination="LOy-67-U5r" id="JPj-rv-KOj"/>
+                <outlet property="ivTick" destination="lXS-XR-Dqg" id="YUG-wx-2iv"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="0.70422535211267612"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_color" width="105" height="105"/>
+        <image name="ic_tick" width="90" height="90"/>
+    </resources>
+</document>

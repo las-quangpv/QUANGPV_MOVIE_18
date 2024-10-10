@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AiView" customModule="Movie018" customModuleProvider="target">
+            <connections>
+                <outlet property="boderView" destination="MQd-uk-t77" id="IU2-dE-THI"/>
+                <outlet property="iv" destination="NJx-5k-wzY" id="z5C-H0-aTm"/>
+                <outlet property="lbContent" destination="6Ee-XS-9kf" id="PZy-H3-hAb"/>
+                <outlet property="lbTitle" destination="AoE-2m-Lom" id="DRH-NR-1gq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQd-uk-t77" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_gallery" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-5k-wzY">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-DO-DQH">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="479"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-XS-9kf">
+                            <rect key="frame" x="16" y="377" width="361" height="22"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoE-2m-Lom">
+                            <rect key="frame" x="16" y="341.66666666666669" width="361" height="27.333333333333314"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03a-BJ-nCE" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                            <rect key="frame" x="16" y="415" width="361" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrI-pQ-9HV">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.088678975450044842" green="0.27511748552707305" blue="0.85953104864690721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="UrI-pQ-9HV" secondAttribute="trailing" id="9zM-z5-hf9"/>
+                                <constraint firstItem="UrI-pQ-9HV" firstAttribute="leading" secondItem="03a-BJ-nCE" secondAttribute="leading" id="Cfx-cE-66E"/>
+                                <constraint firstItem="UrI-pQ-9HV" firstAttribute="top" secondItem="03a-BJ-nCE" secondAttribute="top" id="XYP-3j-ynt"/>
+                                <constraint firstAttribute="bottom" secondItem="UrI-pQ-9HV" secondAttribute="bottom" id="lFM-O0-1te"/>
+                                <constraint firstAttribute="height" constant="48" id="ty0-fl-6wb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AoE-2m-Lom" secondAttribute="trailing" constant="16" id="1rF-N2-6pB"/>
+                        <constraint firstItem="NJx-5k-wzY" firstAttribute="top" secondItem="MQd-uk-t77" secondAttribute="top" id="4bn-Ju-sij"/>
+                        <constraint firstItem="fvc-DO-DQH" firstAttribute="leading" secondItem="MQd-uk-t77" secondAttribute="leading" id="4to-0g-7FL"/>
+                        <constraint firstAttribute="trailing" secondItem="fvc-DO-DQH" secondAttribute="trailing" id="7rE-U5-bJy"/>
+                        <constraint firstItem="AoE-2m-Lom" firstAttribute="leading" secondItem="MQd-uk-t77" secondAttribute="leading" constant="16" id="9v4-wg-jGN"/>
+                        <constraint firstAttribute="bottom" secondItem="fvc-DO-DQH" secondAttribute="bottom" id="K2E-7P-Occ"/>
+                        <constraint firstItem="fvc-DO-DQH" firstAttribute="top" secondItem="MQd-uk-t77" secondAttribute="top" id="NBU-wg-MmB"/>
+                        <constraint firstItem="NJx-5k-wzY" firstAttribute="leading" secondItem="MQd-uk-t77" secondAttribute="leading" id="PuG-fb-WbI"/>
+                        <constraint firstAttribute="bottom" secondItem="NJx-5k-wzY" secondAttribute="bottom" id="R2T-1M-1xQ"/>
+                        <constraint firstItem="03a-BJ-nCE" firstAttribute="leading" secondItem="MQd-uk-t77" secondAttribute="leading" constant="16" id="T6h-Cf-yn7"/>
+                        <constraint firstAttribute="trailing" secondItem="NJx-5k-wzY" secondAttribute="trailing" id="aX1-tb-zzy"/>
+                        <constraint firstItem="6Ee-XS-9kf" firstAttribute="leading" secondItem="MQd-uk-t77" secondAttribute="leading" constant="16" id="bMV-Aq-w7Q"/>
+                        <constraint firstAttribute="bottom" secondItem="03a-BJ-nCE" secondAttribute="bottom" constant="16" id="cXd-4G-Jfd"/>
+                        <constraint firstItem="03a-BJ-nCE" firstAttribute="top" secondItem="6Ee-XS-9kf" secondAttribute="bottom" constant="16" id="dCF-pu-Icz"/>
+                        <constraint firstAttribute="trailing" secondItem="03a-BJ-nCE" secondAttribute="trailing" constant="16" id="ini-Tm-2G8"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ee-XS-9kf" secondAttribute="trailing" constant="16" id="st8-OY-x2U"/>
+                        <constraint firstItem="6Ee-XS-9kf" firstAttribute="top" secondItem="AoE-2m-Lom" secondAttribute="bottom" constant="8" id="vAn-2f-imk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MQd-uk-t77" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Qv-4g-tRG"/>
+                <constraint firstAttribute="bottom" secondItem="MQd-uk-t77" secondAttribute="bottom" id="EfK-IS-JaS"/>
+                <constraint firstItem="MQd-uk-t77" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="blZ-iU-cNW"/>
+                <constraint firstAttribute="trailing" secondItem="MQd-uk-t77" secondAttribute="trailing" id="vza-Xf-asp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-77.099236641221367" y="-111.61971830985917"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner_gallery" width="564" height="564"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

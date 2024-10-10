@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyPlayListCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfX-Ef-h5T">
+                        <rect key="frame" x="20" y="14" width="94" height="141"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="9O1-Tq-e62"/>
+                            <constraint firstAttribute="height" constant="141" id="bLl-sJ-kxA"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-jF-tzK">
+                        <rect key="frame" x="130" y="49.5" width="184" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-w2-fBV">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="20"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-Ot-ggo">
+                                <rect key="frame" x="0.0" y="25" width="184" height="20"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjF-nT-lXg">
+                                <rect key="frame" x="0.0" y="50" width="184" height="20"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K9-ft-82d">
+                        <rect key="frame" x="324" y="69.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7Yi-m5-vri"/>
+                            <constraint firstAttribute="width" constant="30" id="Bcg-E0-Qgh"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ic_delete"/>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rMh-M9-9Rg"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQC-Ms-Oh7">
+                        <rect key="frame" x="20" y="168" width="314" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dT9-IO-aqV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MQC-Ms-Oh7" secondAttribute="bottom" id="9Ta-KV-9x7"/>
+                <constraint firstItem="bVU-jF-tzK" firstAttribute="leading" secondItem="bfX-Ef-h5T" secondAttribute="trailing" constant="16" id="BAk-bC-kvO"/>
+                <constraint firstItem="bfX-Ef-h5T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="GUc-Qg-ACe"/>
+                <constraint firstItem="bfX-Ef-h5T" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="H5D-zE-qko"/>
+                <constraint firstAttribute="trailing" secondItem="bVU-jF-tzK" secondAttribute="trailing" constant="40" id="Kqr-xM-l3b"/>
+                <constraint firstAttribute="trailing" secondItem="MQC-Ms-Oh7" secondAttribute="trailing" constant="20" id="Ovq-m5-BH6"/>
+                <constraint firstAttribute="trailing" secondItem="5K9-ft-82d" secondAttribute="trailing" id="jjT-dg-Aqd"/>
+                <constraint firstItem="5K9-ft-82d" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mqE-pw-Eye"/>
+                <constraint firstItem="MQC-Ms-Oh7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="okV-Ea-1hX"/>
+                <constraint firstItem="bVU-jF-tzK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="tBo-sN-zMv"/>
+            </constraints>
+            <size key="customSize" width="354" height="169"/>
+            <connections>
+                <outlet property="lineView" destination="MQC-Ms-Oh7" id="frc-Bu-TvI"/>
+                <outlet property="posterImage" destination="bfX-Ef-h5T" id="yK2-hF-6Kl"/>
+                <outlet property="releaseLabel" destination="vjF-nT-lXg" id="q08-NZ-QME"/>
+                <outlet property="titleLabel" destination="aOv-Ot-ggo" id="fYq-kH-7xh"/>
+                <outlet property="typeLabel" destination="tuz-w2-fBV" id="5CU-hl-yVr"/>
+            </connections>
+            <point key="canvasLocation" x="356.52173913043481" y="117.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="19" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="221" id="KGk-i7-Jjw" customClass="MDetailMediaCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="221"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE2-JJ-H9U">
+                        <rect key="frame" x="20" y="16" width="310" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="GJs-kl-I69"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xiL-yr-pRq">
+                        <rect key="frame" x="0.0" y="51" width="350" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bAk-5W-Vgc">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xiL-yr-pRq" firstAttribute="top" secondItem="kE2-JJ-H9U" secondAttribute="bottom" constant="10" id="3Rh-Fg-ILL"/>
+                    <constraint firstAttribute="trailing" secondItem="xiL-yr-pRq" secondAttribute="trailing" id="AZW-BE-HzN"/>
+                    <constraint firstAttribute="trailing" secondItem="kE2-JJ-H9U" secondAttribute="trailing" constant="20" id="bbG-bh-OAI"/>
+                    <constraint firstItem="xiL-yr-pRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e4z-Rb-Q3j"/>
+                    <constraint firstItem="kE2-JJ-H9U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pau-sf-3qw"/>
+                    <constraint firstAttribute="bottom" secondItem="xiL-yr-pRq" secondAttribute="bottom" constant="16" id="saz-tB-z9X"/>
+                    <constraint firstItem="kE2-JJ-H9U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="zZ6-sL-xUU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mediaCollectionView" destination="xiL-yr-pRq" id="xbP-3c-IEl"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

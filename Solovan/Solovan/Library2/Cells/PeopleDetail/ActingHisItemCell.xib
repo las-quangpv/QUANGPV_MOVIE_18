@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="ActingHisItemCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWT-I8-OOg">
+                        <rect key="frame" x="20" y="35.5" width="45" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="H7Y-fh-uIM"/>
+                            <constraint firstAttribute="width" constant="45" id="laP-U4-591"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VM-wz-Gdd">
+                        <rect key="frame" x="75" y="42.5" width="7" height="7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="DxX-7J-mT5"/>
+                            <constraint firstAttribute="width" constant="7" id="NEa-eU-O41"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QON-eq-CdW">
+                        <rect key="frame" x="92" y="35.5" width="258" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fuI-Ut-672"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QON-eq-CdW" firstAttribute="leading" secondItem="2VM-wz-Gdd" secondAttribute="trailing" constant="10" id="AQ3-pV-sKw"/>
+                    <constraint firstAttribute="trailing" secondItem="QON-eq-CdW" secondAttribute="trailing" constant="20" id="DOX-C0-4n3"/>
+                    <constraint firstItem="PWT-I8-OOg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Kjk-Rf-sfP"/>
+                    <constraint firstItem="QON-eq-CdW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PMx-vk-k7q"/>
+                    <constraint firstItem="2VM-wz-Gdd" firstAttribute="leading" secondItem="PWT-I8-OOg" secondAttribute="trailing" constant="10" id="WLh-lV-CDQ"/>
+                    <constraint firstItem="PWT-I8-OOg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cKY-9f-hfe"/>
+                    <constraint firstItem="2VM-wz-Gdd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ijn-nG-0Qx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="roundView" destination="2VM-wz-Gdd" id="fHW-42-z2V"/>
+                <outlet property="titleLabel" destination="QON-eq-CdW" id="cTx-ow-g4A"/>
+                <outlet property="yearLabel" destination="PWT-I8-OOg" id="Bvk-h1-boN"/>
+            </connections>
+            <point key="canvasLocation" x="173.91304347826087" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

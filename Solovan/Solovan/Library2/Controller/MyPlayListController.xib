@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+        <array key="iCielSoupofJustice.otf">
+            <string>iCielSoupofJustice</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPlayListController" customModule="Solovan" customModuleProvider="target">
+            <connections>
+                <outlet property="playListCollectionView" destination="FBg-YK-8OL" id="i7Y-hQ-3Gh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewEmpty" destination="nww-xX-7Iz" id="xuY-wA-6Pv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNR-g1-0Qy">
+                    <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipP-SN-p3v">
+                            <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="hY4-h3-5rJ"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_back_black"/>
+                            <connections>
+                                <action selector="menuAction:" destination="-1" eventType="touchUpInside" id="1rY-lO-Bhi"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY PLAYLIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-ML-GMY">
+                            <rect key="frame" x="90" y="0.0" width="234" height="50"/>
+                            <fontDescription key="fontDescription" name="iCielSoupofJustice" family="iCiel Soup of Justice" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ipP-SN-p3v" secondAttribute="bottom" id="3l6-rd-J80"/>
+                        <constraint firstItem="cYH-ML-GMY" firstAttribute="top" secondItem="XNR-g1-0Qy" secondAttribute="top" id="6kU-66-gdm"/>
+                        <constraint firstItem="ipP-SN-p3v" firstAttribute="top" secondItem="XNR-g1-0Qy" secondAttribute="top" id="7ym-bw-Rvg"/>
+                        <constraint firstAttribute="bottom" secondItem="cYH-ML-GMY" secondAttribute="bottom" id="8F6-le-8fb"/>
+                        <constraint firstAttribute="height" constant="50" id="HEz-Y9-De2"/>
+                        <constraint firstAttribute="trailing" secondItem="cYH-ML-GMY" secondAttribute="trailing" constant="90" id="P50-7u-f4P"/>
+                        <constraint firstItem="cYH-ML-GMY" firstAttribute="leading" secondItem="ipP-SN-p3v" secondAttribute="trailing" constant="20" id="PPc-9F-pYY"/>
+                        <constraint firstItem="ipP-SN-p3v" firstAttribute="leading" secondItem="XNR-g1-0Qy" secondAttribute="leading" constant="20" id="YVy-DR-D6s"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-YK-8OL">
+                    <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P1I-Rw-LBH">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nww-xX-7Iz">
+                    <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_favorite" translatesAutoresizingMaskIntoConstraints="NO" id="J3K-1G-2Fd">
+                            <rect key="frame" x="107" y="321" width="200" height="122.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="LUw-zS-PWT"/>
+                                <constraint firstAttribute="width" secondItem="J3K-1G-2Fd" secondAttribute="height" multiplier="640:392" id="qUe-c5-NNI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keK-Di-uYi">
+                            <rect key="frame" x="0.0" y="459.5" width="414" height="25"/>
+                            <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="20"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="keK-Di-uYi" secondAttribute="trailing" id="AJn-Jj-dV8"/>
+                        <constraint firstItem="keK-Di-uYi" firstAttribute="top" secondItem="J3K-1G-2Fd" secondAttribute="bottom" constant="16" id="KVG-4F-bS9"/>
+                        <constraint firstItem="J3K-1G-2Fd" firstAttribute="centerY" secondItem="nww-xX-7Iz" secondAttribute="centerY" id="Ka4-mH-w96"/>
+                        <constraint firstItem="J3K-1G-2Fd" firstAttribute="centerX" secondItem="nww-xX-7Iz" secondAttribute="centerX" id="OdO-Xf-KLO"/>
+                        <constraint firstItem="keK-Di-uYi" firstAttribute="leading" secondItem="nww-xX-7Iz" secondAttribute="leading" id="gZw-wJ-SaD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FBg-YK-8OL" secondAttribute="bottom" id="Acd-VW-dcu"/>
+                <constraint firstItem="XNR-g1-0Qy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="M4C-AW-XWD"/>
+                <constraint firstItem="XNR-g1-0Qy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Moc-mn-rzb"/>
+                <constraint firstItem="FBg-YK-8OL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qsc-42-iZF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nww-xX-7Iz" secondAttribute="bottom" id="Uec-Te-bEU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nww-xX-7Iz" secondAttribute="trailing" id="Xhp-h3-IOy"/>
+                <constraint firstItem="nww-xX-7Iz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mMV-Cy-pUp"/>
+                <constraint firstItem="nww-xX-7Iz" firstAttribute="top" secondItem="XNR-g1-0Qy" secondAttribute="bottom" id="nRs-Ug-QAj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FBg-YK-8OL" secondAttribute="trailing" id="q3y-Oh-AjG"/>
+                <constraint firstItem="XNR-g1-0Qy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qXo-Zz-d3d"/>
+                <constraint firstItem="FBg-YK-8OL" firstAttribute="top" secondItem="XNR-g1-0Qy" secondAttribute="bottom" constant="10" id="vgb-DU-V3N"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_black" width="24" height="20"/>
+        <image name="ic_no_favorite" width="320" height="196"/>
+    </resources>
+</document>

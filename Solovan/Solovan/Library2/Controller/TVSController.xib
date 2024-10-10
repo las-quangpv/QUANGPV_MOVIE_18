@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="iCielSoupofJustice.otf">
+            <string>iCielSoupofJustice</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TVSController" customModule="Solovan" customModuleProvider="target">
+            <connections>
+                <outlet property="tvShowCollectionView" destination="g2p-nI-qCc" id="28Q-Ju-JNu"/>
+                <outlet property="tvshowTableView" destination="UCI-p4-J1I" id="WuF-Oa-prB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNy-kY-lEC">
+                    <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-WY-lTR">
+                            <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="w3R-zX-FFH"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_back_black"/>
+                            <connections>
+                                <action selector="menuAction:" destination="-1" eventType="touchUpInside" id="F9U-r5-Fsg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOa-SF-xqD">
+                            <rect key="frame" x="344" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="ddU-Rn-7od"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_search"/>
+                            <connections>
+                                <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="Fw6-Zn-s8Z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV Shows" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjF-nd-cc1">
+                            <rect key="frame" x="75" y="0.0" width="264" height="50"/>
+                            <fontDescription key="fontDescription" name="iCielSoupofJustice" family="iCiel Soup of Justice" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3Jf-WY-lTR" secondAttribute="bottom" id="2vt-FW-t0l"/>
+                        <constraint firstAttribute="bottom" secondItem="cOa-SF-xqD" secondAttribute="bottom" id="CnG-fl-Vcm"/>
+                        <constraint firstItem="cOa-SF-xqD" firstAttribute="leading" secondItem="CjF-nd-cc1" secondAttribute="trailing" constant="5" id="L42-gc-QdW"/>
+                        <constraint firstAttribute="trailing" secondItem="cOa-SF-xqD" secondAttribute="trailing" constant="20" id="UU5-sd-sJT"/>
+                        <constraint firstAttribute="bottom" secondItem="CjF-nd-cc1" secondAttribute="bottom" id="XIc-wG-LRR"/>
+                        <constraint firstItem="cOa-SF-xqD" firstAttribute="top" secondItem="XNy-kY-lEC" secondAttribute="top" id="Z05-4J-nWn"/>
+                        <constraint firstItem="CjF-nd-cc1" firstAttribute="leading" secondItem="3Jf-WY-lTR" secondAttribute="trailing" constant="5" id="eyI-5P-nfE"/>
+                        <constraint firstItem="3Jf-WY-lTR" firstAttribute="leading" secondItem="XNy-kY-lEC" secondAttribute="leading" constant="20" id="hpz-WO-BSo"/>
+                        <constraint firstItem="CjF-nd-cc1" firstAttribute="top" secondItem="XNy-kY-lEC" secondAttribute="top" id="lh1-fE-QF6"/>
+                        <constraint firstAttribute="height" constant="50" id="mzW-wO-BRg"/>
+                        <constraint firstItem="3Jf-WY-lTR" firstAttribute="top" secondItem="XNy-kY-lEC" secondAttribute="top" id="naE-fJ-4WH"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UCI-p4-J1I">
+                    <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-nI-qCc">
+                    <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wfF-Kg-GjR">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g2p-nI-qCc" secondAttribute="trailing" id="1nV-cz-PhV"/>
+                <constraint firstItem="XNy-kY-lEC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4o2-WB-6XL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XNy-kY-lEC" secondAttribute="trailing" id="5Bn-6V-t54"/>
+                <constraint firstItem="UCI-p4-J1I" firstAttribute="top" secondItem="XNy-kY-lEC" secondAttribute="bottom" id="DJU-ad-FIK"/>
+                <constraint firstItem="UCI-p4-J1I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DTC-mu-9WQ"/>
+                <constraint firstItem="g2p-nI-qCc" firstAttribute="top" secondItem="XNy-kY-lEC" secondAttribute="bottom" constant="10" id="TLc-gY-wUR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g2p-nI-qCc" secondAttribute="bottom" id="XpG-kn-w7E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UCI-p4-J1I" secondAttribute="trailing" id="ZrY-03-pSF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UCI-p4-J1I" secondAttribute="bottom" id="bpG-q2-VWx"/>
+                <constraint firstItem="XNy-kY-lEC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dmj-FH-qUa"/>
+                <constraint firstItem="g2p-nI-qCc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m00-Ug-eTr"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_black" width="24" height="20"/>
+        <image name="ic_search" width="21" height="20"/>
+    </resources>
+</document>

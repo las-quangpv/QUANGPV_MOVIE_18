@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieDbCell" customModule="Movie018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-7U-GHp" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-me-SD8">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1R-5K-mCv" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="111" width="175" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DJg-MJ-4cd">
+                                        <rect key="frame" x="8" y="8" width="159" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcU-X7-ygz">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6g-m7-oWR">
+                                                <rect key="frame" x="0.0" y="23.333333333333343" width="159" height="16.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DJg-MJ-4cd" secondAttribute="trailing" constant="8" id="0BP-F8-KcF"/>
+                                    <constraint firstItem="DJg-MJ-4cd" firstAttribute="leading" secondItem="s1R-5K-mCv" secondAttribute="leading" constant="8" id="8Ze-kv-Wed"/>
+                                    <constraint firstAttribute="bottom" secondItem="DJg-MJ-4cd" secondAttribute="bottom" constant="8" id="VtX-SA-Wjv"/>
+                                    <constraint firstItem="DJg-MJ-4cd" firstAttribute="top" secondItem="s1R-5K-mCv" secondAttribute="top" constant="8" id="hTI-YI-3Z0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BqY-me-SD8" secondAttribute="bottom" id="780-7J-dYO"/>
+                            <constraint firstItem="BqY-me-SD8" firstAttribute="leading" secondItem="SmN-7U-GHp" secondAttribute="leading" id="DV3-Pr-Zi0"/>
+                            <constraint firstItem="BqY-me-SD8" firstAttribute="top" secondItem="SmN-7U-GHp" secondAttribute="top" id="RXh-BN-h0h"/>
+                            <constraint firstItem="s1R-5K-mCv" firstAttribute="leading" secondItem="SmN-7U-GHp" secondAttribute="leading" id="Rb7-sp-MWm"/>
+                            <constraint firstAttribute="trailing" secondItem="BqY-me-SD8" secondAttribute="trailing" id="Uby-D9-0XA"/>
+                            <constraint firstAttribute="bottom" secondItem="s1R-5K-mCv" secondAttribute="bottom" id="ima-jV-hId"/>
+                            <constraint firstAttribute="trailing" secondItem="s1R-5K-mCv" secondAttribute="trailing" id="qPC-Pq-avp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SmN-7U-GHp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S3d-Sp-uzX"/>
+                <constraint firstAttribute="trailing" secondItem="SmN-7U-GHp" secondAttribute="trailing" id="ZZA-Wh-nhP"/>
+                <constraint firstAttribute="bottom" secondItem="SmN-7U-GHp" secondAttribute="bottom" id="j2b-d7-Epb"/>
+                <constraint firstItem="SmN-7U-GHp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nmx-6n-hKm"/>
+            </constraints>
+            <size key="customSize" width="175" height="167"/>
+            <connections>
+                <outlet property="iv" destination="BqY-me-SD8" id="o8Y-xb-fSc"/>
+                <outlet property="lbDate" destination="h6g-m7-oWR" id="Eiq-nv-bzU"/>
+                <outlet property="lbTitle" destination="rcU-X7-ygz" id="GeD-6M-9tB"/>
+            </connections>
+            <point key="canvasLocation" x="190.07633587786259" y="29.929577464788736"/>
+        </collectionViewCell>
+    </objects>
+</document>

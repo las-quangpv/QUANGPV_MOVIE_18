@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Movie018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="147"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-mg-CWg">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="147"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiO-i5-szi" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                                <rect key="frame" x="4" y="4" width="110" height="139"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1rw-4F-Ixd" customClass="BoderUIImageView" customModule="Movie018" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="139"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1rw-4F-Ixd" firstAttribute="leading" secondItem="BiO-i5-szi" secondAttribute="leading" id="GIm-eR-x7l"/>
+                                    <constraint firstAttribute="trailing" secondItem="1rw-4F-Ixd" secondAttribute="trailing" id="W5n-BF-hhb"/>
+                                    <constraint firstItem="1rw-4F-Ixd" firstAttribute="top" secondItem="BiO-i5-szi" secondAttribute="top" id="XcE-1K-QBO"/>
+                                    <constraint firstAttribute="bottom" secondItem="1rw-4F-Ixd" secondAttribute="bottom" id="fc0-VJ-Wve"/>
+                                    <constraint firstAttribute="width" constant="110" id="ipW-jH-0bY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadpool &amp; Wolverine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x61-e4-6ry">
+                                <rect key="frame" x="134" y="0.0" width="239" height="35.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="20"/>
+                                <color key="textColor" red="0.38431372549019605" green="0.60784313725490191" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadpool &amp; Wolverine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-zU-kHn">
+                                <rect key="frame" x="134" y="35.333333333333336" width="239" height="26.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="15"/>
+                                <color key="textColor" red="0.64313725490196072" green="0.80392156862745101" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.themoviedb.org/movie/533535-deadpool-wolverine" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-Ui-D87">
+                                <rect key="frame" x="134" y="62" width="239" height="53"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="15"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.80392156859999997" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6ye-xo-1zy">
+                                <rect key="frame" x="134" y="121" width="239" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="I4Y-TO-B9c"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="6" minimumInteritemSpacing="6" id="hCx-cQ-jjq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BiO-i5-szi" secondAttribute="bottom" constant="4" id="182-g7-S2d"/>
+                            <constraint firstAttribute="trailing" secondItem="6ye-xo-1zy" secondAttribute="trailing" id="2Io-pD-XKt"/>
+                            <constraint firstItem="BiO-i5-szi" firstAttribute="leading" secondItem="Lbb-mg-CWg" secondAttribute="leading" constant="4" id="4Zw-Ir-SWj"/>
+                            <constraint firstItem="Cgh-zU-kHn" firstAttribute="top" secondItem="x61-e4-6ry" secondAttribute="bottom" id="CYk-NO-CJ6"/>
+                            <constraint firstItem="x61-e4-6ry" firstAttribute="top" secondItem="Lbb-mg-CWg" secondAttribute="top" id="Cy4-MN-YXq"/>
+                            <constraint firstItem="Hbt-Ui-D87" firstAttribute="leading" secondItem="Cgh-zU-kHn" secondAttribute="leading" id="Ifh-nM-de1"/>
+                            <constraint firstItem="6ye-xo-1zy" firstAttribute="bottom" secondItem="BiO-i5-szi" secondAttribute="bottom" id="LPj-Fw-TIh"/>
+                            <constraint firstAttribute="trailing" secondItem="x61-e4-6ry" secondAttribute="trailing" id="PRU-y3-jEC"/>
+                            <constraint firstItem="6ye-xo-1zy" firstAttribute="leading" secondItem="BiO-i5-szi" secondAttribute="trailing" constant="20" id="W11-kc-rbJ"/>
+                            <constraint firstItem="Hbt-Ui-D87" firstAttribute="top" secondItem="Cgh-zU-kHn" secondAttribute="bottom" id="aaA-5b-Xcg"/>
+                            <constraint firstItem="Cgh-zU-kHn" firstAttribute="leading" secondItem="x61-e4-6ry" secondAttribute="leading" id="cbk-nZ-cDq"/>
+                            <constraint firstAttribute="trailing" secondItem="Cgh-zU-kHn" secondAttribute="trailing" id="dyt-T9-bvk"/>
+                            <constraint firstItem="x61-e4-6ry" firstAttribute="leading" secondItem="BiO-i5-szi" secondAttribute="trailing" constant="20" id="jzQ-95-CU7"/>
+                            <constraint firstItem="BiO-i5-szi" firstAttribute="top" secondItem="Lbb-mg-CWg" secondAttribute="top" constant="4" id="l80-hu-Xfd"/>
+                            <constraint firstAttribute="trailing" secondItem="Hbt-Ui-D87" secondAttribute="trailing" id="taQ-fN-BRj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Lbb-mg-CWg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4rU-p0-uv4"/>
+                <constraint firstAttribute="trailing" secondItem="Lbb-mg-CWg" secondAttribute="trailing" id="Dpa-32-ax1"/>
+                <constraint firstAttribute="bottom" secondItem="Lbb-mg-CWg" secondAttribute="bottom" id="cax-cM-3dh"/>
+                <constraint firstItem="Lbb-mg-CWg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vDl-6V-e6C"/>
+            </constraints>
+            <size key="customSize" width="373" height="147"/>
+            <connections>
+                <outlet property="clvTag" destination="6ye-xo-1zy" id="m16-Fh-yam"/>
+                <outlet property="ivPoster" destination="1rw-4F-Ixd" id="0hP-qZ-v9L"/>
+                <outlet property="lbDate" destination="Cgh-zU-kHn" id="axp-Gp-rHo"/>
+                <outlet property="lbName" destination="x61-e4-6ry" id="r2f-dV-vAB"/>
+                <outlet property="lbUrl" destination="Hbt-Ui-D87" id="Hz5-fx-rJe"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="22.887323943661972"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

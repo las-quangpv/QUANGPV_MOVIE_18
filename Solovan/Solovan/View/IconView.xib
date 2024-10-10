@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconView" customModule="Movie018" customModuleProvider="target">
+            <connections>
+                <outlet property="imv" destination="q0z-H7-DiF" id="r4y-7v-WiD"/>
+                <outlet property="viewBoder" destination="hpa-N6-8F1" id="1DJ-o1-A0T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="209"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-N6-8F1" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="215" height="209"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_1" translatesAutoresizingMaskIntoConstraints="NO" id="q0z-H7-DiF">
+                            <rect key="frame" x="57.666666666666657" y="54.666666666666657" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="q0z-H7-DiF" secondAttribute="height" id="jb4-Pm-b0z"/>
+                                <constraint firstAttribute="width" constant="100" id="pmi-C5-ywr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="q0z-H7-DiF" firstAttribute="centerY" secondItem="hpa-N6-8F1" secondAttribute="centerY" id="EQ3-us-SOq"/>
+                        <constraint firstItem="q0z-H7-DiF" firstAttribute="centerX" secondItem="hpa-N6-8F1" secondAttribute="centerX" id="tQR-sC-hW9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.38431372549019605" green="0.60784313725490191" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hpa-N6-8F1" secondAttribute="bottom" id="24h-5p-aIq"/>
+                <constraint firstItem="hpa-N6-8F1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="67v-AE-xbA"/>
+                <constraint firstItem="hpa-N6-8F1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eyk-8i-500"/>
+                <constraint firstAttribute="trailing" secondItem="hpa-N6-8F1" secondAttribute="trailing" id="qCt-wo-1Eg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-5.343511450381679" y="-237.67605633802819"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_1" width="300" height="300"/>
+    </resources>
+</document>

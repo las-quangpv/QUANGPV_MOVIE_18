@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchController" customModule="LAS_005" customModuleProvider="target">
+            <connections>
+                <outlet property="searchCollectionView" destination="vka-6r-UAS" id="3O3-QR-JW5"/>
+                <outlet property="searchTextField" destination="voE-AW-BhU" id="4xT-zM-jpv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m74-wM-aJx">
+                    <rect key="frame" x="0.0" y="48" width="414" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search_white" translatesAutoresizingMaskIntoConstraints="NO" id="zqa-ZQ-OQa">
+                            <rect key="frame" x="20" y="20" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="juj-I9-NBw"/>
+                                <constraint firstAttribute="height" constant="20" id="n0H-ev-bUM"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search by name" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="voE-AW-BhU">
+                            <rect key="frame" x="60" y="0.0" width="269" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWc-vC-Rgy">
+                            <rect key="frame" x="349" y="0.0" width="55" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="GDd-Uj-sAh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="BbW-8V-olW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KWc-vC-Rgy" secondAttribute="trailing" constant="10" id="5nr-Ic-lWZ"/>
+                        <constraint firstItem="zqa-ZQ-OQa" firstAttribute="centerY" secondItem="m74-wM-aJx" secondAttribute="centerY" id="757-lV-euN"/>
+                        <constraint firstAttribute="bottom" secondItem="voE-AW-BhU" secondAttribute="bottom" id="DPh-9L-SIl"/>
+                        <constraint firstItem="voE-AW-BhU" firstAttribute="leading" secondItem="zqa-ZQ-OQa" secondAttribute="trailing" constant="20" id="EkI-Zd-tYm"/>
+                        <constraint firstAttribute="bottom" secondItem="KWc-vC-Rgy" secondAttribute="bottom" id="F66-UZ-co7"/>
+                        <constraint firstAttribute="height" constant="60" id="MWG-mC-1hn"/>
+                        <constraint firstItem="KWc-vC-Rgy" firstAttribute="top" secondItem="m74-wM-aJx" secondAttribute="top" id="ThI-cU-WwU"/>
+                        <constraint firstItem="voE-AW-BhU" firstAttribute="top" secondItem="m74-wM-aJx" secondAttribute="top" id="fLA-ku-47t"/>
+                        <constraint firstItem="KWc-vC-Rgy" firstAttribute="leading" secondItem="voE-AW-BhU" secondAttribute="trailing" constant="20" id="p7E-yK-U0I"/>
+                        <constraint firstItem="zqa-ZQ-OQa" firstAttribute="leading" secondItem="m74-wM-aJx" secondAttribute="leading" constant="20" id="uVQ-hu-Zma"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="yKg-a1-VYH"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vka-6r-UAS">
+                    <rect key="frame" x="0.0" y="108" width="414" height="788"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dV1-zB-DoY">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.38431372549019605" green="0.21176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vka-6r-UAS" secondAttribute="bottom" id="1ev-S9-VdP"/>
+                <constraint firstItem="m74-wM-aJx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PNZ-QO-mZr"/>
+                <constraint firstItem="vka-6r-UAS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YiO-Hg-ycx"/>
+                <constraint firstItem="m74-wM-aJx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bOf-Q1-0B9"/>
+                <constraint firstItem="m74-wM-aJx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dqN-qH-myI"/>
+                <constraint firstItem="vka-6r-UAS" firstAttribute="top" secondItem="m74-wM-aJx" secondAttribute="bottom" id="nkE-mT-Vnq"/>
+                <constraint firstItem="vka-6r-UAS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tCK-18-R1S"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_search_white" width="22" height="20"/>
+    </resources>
+</document>

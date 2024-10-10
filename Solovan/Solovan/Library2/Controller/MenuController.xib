@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuController" customModule="Solovan" customModuleProvider="target">
+            <connections>
+                <outlet property="menuTableView" destination="iVa-z4-DJr" id="EbC-Xd-IWz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg_menu" translatesAutoresizingMaskIntoConstraints="NO" id="DY4-eS-tya">
+                    <rect key="frame" x="0.0" y="18" width="414" height="844"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iVa-z4-DJr">
+                    <rect key="frame" x="0.0" y="98" width="414" height="726"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldK-Dc-oDT">
+                    <rect key="frame" x="364" y="48" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JIn-YV-eWg"/>
+                        <constraint firstAttribute="width" constant="50" id="YS0-nF-Ah6"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_close"/>
+                    <buttonConfiguration key="configuration" style="plain" image="ic_close_play"/>
+                    <connections>
+                        <action selector="closeHandler:" destination="-1" eventType="touchUpInside" id="1nf-Wi-fmi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DY4-eS-tya" secondAttribute="trailing" id="8B1-tO-KKE"/>
+                <constraint firstItem="iVa-z4-DJr" firstAttribute="top" secondItem="ldK-Dc-oDT" secondAttribute="bottom" id="Gcg-zB-7yF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iVa-z4-DJr" secondAttribute="bottom" constant="38" id="LCm-ln-5kB"/>
+                <constraint firstItem="ldK-Dc-oDT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MV3-bS-6tn"/>
+                <constraint firstItem="DY4-eS-tya" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QAB-nR-3S7"/>
+                <constraint firstItem="DY4-eS-tya" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="YZD-0i-U1s"/>
+                <constraint firstItem="DY4-eS-tya" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="j4Z-XL-mi7"/>
+                <constraint firstItem="iVa-z4-DJr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jnw-Xe-MlN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ldK-Dc-oDT" secondAttribute="trailing" id="nLR-O4-Syn"/>
+                <constraint firstItem="iVa-z4-DJr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tFS-Lb-dcX"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bg_menu" width="334" height="844"/>
+        <image name="ic_close" width="90" height="90"/>
+        <image name="ic_close_play" width="14" height="14"/>
+    </resources>
+</document>

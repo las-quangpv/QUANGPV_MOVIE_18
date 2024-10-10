@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDetailController" customModule="Solovan" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="oSz-zG-njC" id="5le-su-WNP"/>
+                <outlet property="movieDetailTableView" destination="AxR-Ex-lFz" id="WnT-Dw-GL7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AxR-Ex-lFz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSz-zG-njC" customClass="GradientView" customModule="Solovan" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stT-ZO-cC5">
+                            <rect key="frame" x="10" y="45" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="6Cc-sR-P8O"/>
+                                <constraint firstAttribute="height" constant="50" id="7QX-hK-KC0"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_back_white_player"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="2jk-3X-O08"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="stT-ZO-cC5" secondAttribute="bottom" id="tmN-6J-bdK"/>
+                        <constraint firstAttribute="height" constant="95" id="vSs-CF-LAd"/>
+                        <constraint firstItem="stT-ZO-cC5" firstAttribute="leading" secondItem="oSz-zG-njC" secondAttribute="leading" constant="10" id="yqp-2M-tRR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AxR-Ex-lFz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1is-WV-fhw"/>
+                <constraint firstItem="AxR-Ex-lFz" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ERi-fc-hai"/>
+                <constraint firstItem="AxR-Ex-lFz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HNj-Cx-aSv"/>
+                <constraint firstItem="AxR-Ex-lFz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NtM-7f-a7n"/>
+                <constraint firstItem="oSz-zG-njC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uvm-n1-4e9"/>
+                <constraint firstItem="oSz-zG-njC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cty-Ow-Ew6"/>
+                <constraint firstItem="oSz-zG-njC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sUG-Ez-teI"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_white_player" width="24" height="20"/>
+    </resources>
+</document>

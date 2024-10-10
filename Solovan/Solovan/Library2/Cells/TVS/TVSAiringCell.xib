@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TVSAiringCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="272"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOm-bN-7DM">
+                        <rect key="frame" x="20" y="181" width="373" height="91"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV SHOWS AIRING TODAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvs-hy-D3s">
+                                <rect key="frame" x="0.0" y="56" width="373" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="NuM-36-CeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="91" id="3P1-UZ-A2y"/>
+                            <constraint firstItem="Wvs-hy-D3s" firstAttribute="leading" secondItem="GOm-bN-7DM" secondAttribute="leading" id="7Yo-JL-iwI"/>
+                            <constraint firstAttribute="bottom" secondItem="Wvs-hy-D3s" secondAttribute="bottom" constant="10" id="DA5-xA-t3c"/>
+                            <constraint firstAttribute="trailing" secondItem="Wvs-hy-D3s" secondAttribute="trailing" id="JAt-VY-ZvN"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWE-mr-ZUH" customClass="FSPagerView" customModule="LAS_005" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="18" width="413" height="209"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="209" id="XGX-5Y-EBe"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekU-cz-KrH">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="272"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="FjW-WH-LvP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ekU-cz-KrH" secondAttribute="bottom" id="4PQ-Zt-Yha"/>
+                <constraint firstAttribute="trailing" secondItem="GOm-bN-7DM" secondAttribute="trailing" constant="20" id="BpH-x1-sWl"/>
+                <constraint firstItem="ekU-cz-KrH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gaz-RM-g22"/>
+                <constraint firstAttribute="bottom" secondItem="IWE-mr-ZUH" secondAttribute="bottom" constant="45" id="L0f-hA-1S3"/>
+                <constraint firstItem="ekU-cz-KrH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RvI-2z-nEG"/>
+                <constraint firstItem="IWE-mr-ZUH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ybd-nk-qvz"/>
+                <constraint firstAttribute="trailing" secondItem="IWE-mr-ZUH" secondAttribute="trailing" id="fzj-Lb-fqp"/>
+                <constraint firstItem="GOm-bN-7DM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="kL7-DB-wpI"/>
+                <constraint firstAttribute="bottom" secondItem="GOm-bN-7DM" secondAttribute="bottom" id="pei-sg-ldc"/>
+            </constraints>
+            <size key="customSize" width="413" height="272"/>
+            <connections>
+                <outlet property="leadingConstraint" destination="Ybd-nk-qvz" id="X9F-Tv-Dme"/>
+                <outlet property="tvShowPager" destination="IWE-mr-ZUH" id="elf-fC-CEJ"/>
+                <outlet property="tvshowView" destination="GOm-bN-7DM" id="BiQ-1L-lwE"/>
+            </connections>
+            <point key="canvasLocation" x="400.72463768115944" y="152.00892857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

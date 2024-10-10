@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="TVSTopRatedCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="247"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP RATED TV SHOWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBV-45-bdr">
+                        <rect key="frame" x="20" y="20" width="234" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="0gy-ph-exI"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="lKG-5o-JCc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="20"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-Yg-q1o">
+                        <rect key="frame" x="0.0" y="55" width="395" height="192"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3aJ-th-F3b">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FBV-45-bdr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3v9-3m-YGN"/>
+                    <constraint firstAttribute="trailing" secondItem="a1b-Yg-q1o" secondAttribute="trailing" id="E0O-T3-ODT"/>
+                    <constraint firstItem="a1b-Yg-q1o" firstAttribute="top" secondItem="FBV-45-bdr" secondAttribute="bottom" constant="10" id="JbF-fh-EAt"/>
+                    <constraint firstItem="a1b-Yg-q1o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mbx-Ll-aOk"/>
+                    <constraint firstItem="FBV-45-bdr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="PXW-Gs-iSG"/>
+                    <constraint firstAttribute="bottom" secondItem="a1b-Yg-q1o" secondAttribute="bottom" id="W2J-S0-wYj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="topRatedCollectionView" destination="a1b-Yg-q1o" id="Asf-xF-7Si"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="145.64732142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

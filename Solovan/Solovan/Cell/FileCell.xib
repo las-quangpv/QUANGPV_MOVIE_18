@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FileCell" customModule="Movie018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgZ-kl-35L">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="51"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0c-Lt-rJT">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_file_1" translatesAutoresizingMaskIntoConstraints="NO" id="31d-v8-Es7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-po-P8v">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.38431372549019605" green="0.60784313725490191" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="31d-v8-Es7" secondAttribute="trailing" id="1I2-aF-Hew"/>
+                                    <constraint firstAttribute="trailing" secondItem="Se4-po-P8v" secondAttribute="trailing" id="FuG-di-sGK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Se4-po-P8v" secondAttribute="bottom" id="GUf-Gx-i8z"/>
+                                    <constraint firstAttribute="bottom" secondItem="31d-v8-Es7" secondAttribute="bottom" id="J1w-lu-9O7"/>
+                                    <constraint firstAttribute="width" constant="50" id="UjK-ju-fC8"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wi9-20-whj"/>
+                                    <constraint firstItem="31d-v8-Es7" firstAttribute="leading" secondItem="H0c-Lt-rJT" secondAttribute="leading" id="dou-1f-xjC"/>
+                                    <constraint firstItem="31d-v8-Es7" firstAttribute="top" secondItem="H0c-Lt-rJT" secondAttribute="top" id="gyh-9p-vL0"/>
+                                    <constraint firstItem="Se4-po-P8v" firstAttribute="leading" secondItem="H0c-Lt-rJT" secondAttribute="leading" id="psQ-xz-WVz"/>
+                                    <constraint firstItem="Se4-po-P8v" firstAttribute="top" secondItem="H0c-Lt-rJT" secondAttribute="top" id="y09-5C-zlh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sec-rj-dep">
+                                <rect key="frame" x="70" y="14.666666666666664" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.60784313729999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H0c-Lt-rJT" firstAttribute="top" secondItem="LgZ-kl-35L" secondAttribute="top" id="0qx-eW-LoP"/>
+                            <constraint firstItem="sec-rj-dep" firstAttribute="centerY" secondItem="H0c-Lt-rJT" secondAttribute="centerY" id="VDi-jG-8hR"/>
+                            <constraint firstAttribute="trailing" secondItem="sec-rj-dep" secondAttribute="trailing" id="dgO-cY-Luf"/>
+                            <constraint firstItem="H0c-Lt-rJT" firstAttribute="leading" secondItem="LgZ-kl-35L" secondAttribute="leading" id="k1X-f8-daP"/>
+                            <constraint firstItem="sec-rj-dep" firstAttribute="leading" secondItem="H0c-Lt-rJT" secondAttribute="trailing" constant="20" id="whr-Rc-zVq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LgZ-kl-35L" secondAttribute="bottom" id="0AR-Qf-TUp"/>
+                <constraint firstItem="LgZ-kl-35L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3H8-Nt-upF"/>
+                <constraint firstItem="LgZ-kl-35L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7YV-c1-Ujo"/>
+                <constraint firstAttribute="trailing" secondItem="LgZ-kl-35L" secondAttribute="trailing" id="vAQ-Xr-lTW"/>
+            </constraints>
+            <size key="customSize" width="180" height="51"/>
+            <connections>
+                <outlet property="lbName" destination="sec-rj-dep" id="ayi-5o-H4c"/>
+                <outlet property="lbSize" destination="Se4-po-P8v" id="zhC-o2-hC9"/>
+            </connections>
+            <point key="canvasLocation" x="22.900763358778626" y="20.070422535211268"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_file_1" width="150" height="150"/>
+    </resources>
+</document>

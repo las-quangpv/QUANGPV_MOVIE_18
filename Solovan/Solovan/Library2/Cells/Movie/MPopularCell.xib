@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="KGk-i7-Jjw" customClass="MPopularCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POPULAR MOVIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqr-qE-jlx">
+                        <rect key="frame" x="20" y="10" width="189" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="7bI-Ek-VD7"/>
+                            <constraint firstAttribute="height" constant="25" id="gz8-Bj-vjS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="20"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJN-An-TT4">
+                        <rect key="frame" x="372" y="10" width="74" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="9Ey-BR-9vy"/>
+                            <constraint firstAttribute="width" constant="74" id="u2h-az-5VI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="View all">
+                            <color key="titleColor" systemColor="linkColor"/>
+                        </state>
+                        <connections>
+                            <action selector="viewAllAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fze-j8-GVG"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LeH-pP-Eg7">
+                        <rect key="frame" x="0.0" y="45" width="466" height="105"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WdL-f2-tdF">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iqr-qE-jlx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="GYr-lH-Tsj"/>
+                    <constraint firstAttribute="trailing" secondItem="CJN-An-TT4" secondAttribute="trailing" constant="20" id="Jiw-g7-FXc"/>
+                    <constraint firstAttribute="trailing" secondItem="LeH-pP-Eg7" secondAttribute="trailing" id="LwZ-Gn-l1N"/>
+                    <constraint firstItem="iqr-qE-jlx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SKf-MK-Utt"/>
+                    <constraint firstAttribute="bottom" secondItem="LeH-pP-Eg7" secondAttribute="bottom" constant="16" id="cdb-jZ-AWp"/>
+                    <constraint firstItem="CJN-An-TT4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="k1d-61-NVL"/>
+                    <constraint firstItem="LeH-pP-Eg7" firstAttribute="top" secondItem="iqr-qE-jlx" secondAttribute="bottom" constant="10" id="orH-dw-EvW"/>
+                    <constraint firstItem="LeH-pP-Eg7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qoa-Pa-Hgu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="popularCollectionView" destination="LeH-pP-Eg7" id="fcu-c8-Inf"/>
+                <outlet property="viewAllButton" destination="CJN-An-TT4" id="jVN-A8-yAu"/>
+            </connections>
+            <point key="canvasLocation" x="243.47826086956525" y="118.52678571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

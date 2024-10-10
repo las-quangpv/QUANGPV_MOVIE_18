@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TVSPopularItemCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRu-59-qgP">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="167"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="167" id="mmB-F2-b41"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZc-u6-iIT">
+                        <rect key="frame" x="5" y="135" width="67" height="27"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="TEn-MR-2Dl">
+                                <rect key="frame" x="10" y="6.5" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="ntA-Nj-wT8"/>
+                                    <constraint firstAttribute="width" constant="14" id="y4G-Tc-7VQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRQ-SG-ubU">
+                                <rect key="frame" x="29" y="2" width="25" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="jNC-jm-cfT"/>
+                                    <constraint firstAttribute="height" constant="23" id="m5W-Of-hoo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XRQ-SG-ubU" firstAttribute="centerY" secondItem="yZc-u6-iIT" secondAttribute="centerY" id="K9f-9B-RSc"/>
+                            <constraint firstItem="TEn-MR-2Dl" firstAttribute="centerY" secondItem="yZc-u6-iIT" secondAttribute="centerY" id="NIZ-Us-3us"/>
+                            <constraint firstItem="XRQ-SG-ubU" firstAttribute="leading" secondItem="TEn-MR-2Dl" secondAttribute="trailing" constant="5" id="O2C-pq-af6"/>
+                            <constraint firstItem="TEn-MR-2Dl" firstAttribute="leading" secondItem="yZc-u6-iIT" secondAttribute="leading" constant="10" id="OFO-Xd-ip2"/>
+                            <constraint firstAttribute="height" constant="27" id="Szb-qJ-Cwv"/>
+                            <constraint firstAttribute="width" constant="67" id="Ypl-Dj-3bO"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tom-L3-T2X">
+                        <rect key="frame" x="0.0" y="167" width="358" height="34"/>
+                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rRu-59-qgP" secondAttribute="trailing" id="78m-sh-7MQ"/>
+                <constraint firstItem="yZc-u6-iIT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="L4e-1f-zZZ"/>
+                <constraint firstAttribute="trailing" secondItem="tom-L3-T2X" secondAttribute="trailing" id="Uw9-nI-dnv"/>
+                <constraint firstItem="rRu-59-qgP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Wl4-Uc-Hh0"/>
+                <constraint firstItem="tom-L3-T2X" firstAttribute="top" secondItem="rRu-59-qgP" secondAttribute="bottom" id="XfQ-ds-Ggn"/>
+                <constraint firstItem="tom-L3-T2X" firstAttribute="top" secondItem="yZc-u6-iIT" secondAttribute="bottom" constant="5" id="dwm-fn-TIf"/>
+                <constraint firstAttribute="bottom" secondItem="tom-L3-T2X" secondAttribute="bottom" id="fTy-MP-xzK"/>
+                <constraint firstItem="rRu-59-qgP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ww2-vp-yHq"/>
+                <constraint firstItem="tom-L3-T2X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xaV-6e-eNY"/>
+            </constraints>
+            <size key="customSize" width="358" height="199"/>
+            <connections>
+                <outlet property="posterImage" destination="rRu-59-qgP" id="74F-UV-T4h"/>
+                <outlet property="titleLabel" destination="tom-L3-T2X" id="yj2-jg-Fpe"/>
+                <outlet property="voteLabel" destination="XRQ-SG-ubU" id="1bi-ep-Ln4"/>
+                <outlet property="voteView" destination="yZc-u6-iIT" id="cg6-cz-VDd"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="93"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star" width="14" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

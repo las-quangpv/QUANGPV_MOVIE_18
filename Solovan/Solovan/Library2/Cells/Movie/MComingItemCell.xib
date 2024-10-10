@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MComingItemCell" customModule="LAS_005" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="272"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Zg-iU-sfW">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="210" id="qUF-7p-yCc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFG-js-o8i">
+                        <rect key="frame" x="0.0" y="210" width="140" height="62"/>
+                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9Zg-iU-sfW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HJN-w4-cC4"/>
+                <constraint firstItem="9Zg-iU-sfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OIQ-kv-tmf"/>
+                <constraint firstItem="DFG-js-o8i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UBB-7S-b8D"/>
+                <constraint firstAttribute="trailing" secondItem="9Zg-iU-sfW" secondAttribute="trailing" id="ZQ9-10-vSX"/>
+                <constraint firstAttribute="trailing" secondItem="DFG-js-o8i" secondAttribute="trailing" id="qoe-Sm-gMy"/>
+                <constraint firstItem="DFG-js-o8i" firstAttribute="top" secondItem="9Zg-iU-sfW" secondAttribute="bottom" id="sMF-iK-HGE"/>
+                <constraint firstAttribute="bottom" secondItem="DFG-js-o8i" secondAttribute="bottom" id="vbV-Wb-keN"/>
+            </constraints>
+            <size key="customSize" width="136" height="257"/>
+            <connections>
+                <outlet property="comingImage" destination="9Zg-iU-sfW" id="twZ-l5-mgR"/>
+                <outlet property="comingLabel" destination="DFG-js-o8i" id="55p-D8-1Yz"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="146.65178571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

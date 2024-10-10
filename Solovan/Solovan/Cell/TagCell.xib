@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagCell" customModule="Movie018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QH-94-Eyo" customClass="BoderView" customModule="Movie018" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="129" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEG-J9-xzB">
+                                <rect key="frame" x="20" y="7" width="89" height="41"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XEG-J9-xzB" secondAttribute="bottom" constant="7" id="3a5-FF-Uiq"/>
+                            <constraint firstItem="XEG-J9-xzB" firstAttribute="top" secondItem="5QH-94-Eyo" secondAttribute="top" constant="7" id="6rT-yt-HU6"/>
+                            <constraint firstAttribute="trailing" secondItem="XEG-J9-xzB" secondAttribute="trailing" constant="20" id="VPA-S4-Pkl"/>
+                            <constraint firstItem="XEG-J9-xzB" firstAttribute="leading" secondItem="5QH-94-Eyo" secondAttribute="leading" constant="20" id="aT5-yc-NGb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderTopRight" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="boderBottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5QH-94-Eyo" secondAttribute="bottom" id="8cT-CV-QBV"/>
+                <constraint firstItem="5QH-94-Eyo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Ip-u7-bu1"/>
+                <constraint firstItem="5QH-94-Eyo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DHu-ye-Gxw"/>
+                <constraint firstAttribute="trailing" secondItem="5QH-94-Eyo" secondAttribute="trailing" id="xm3-px-yZy"/>
+            </constraints>
+            <size key="customSize" width="129" height="55"/>
+            <connections>
+                <outlet property="boderView" destination="5QH-94-Eyo" id="uh9-YG-CUh"/>
+                <outlet property="lb" destination="XEG-J9-xzB" id="CVC-gA-941"/>
+            </connections>
+            <point key="canvasLocation" x="-93.89312977099236" y="-9.5070422535211279"/>
+        </collectionViewCell>
+    </objects>
+</document>
