@@ -74,13 +74,13 @@ class SplashVC: UIViewController {
         let splash = UserDefaults.standard.string(forKey: "splash_mode") ?? ""
         
         if splash == "admob" {
-            self.timeLoading = splTimeOut > 0 ? splTimeOut : 15
+            self.timeLoading = splTimeOut > 0 ? splTimeOut : 20
             if AdmobHandle.shared.isReady {
                 self.loadSplashAdmob()
                 self.timerStart()
             }
         } else if splash == AdsName.applovin.rawValue {
-            self.timeLoading = splTimeOut > 0 ? splTimeOut : 15
+            self.timeLoading = splTimeOut > 0 ? splTimeOut : 20
             
             if ApplovinHandle.shared.isReady {
                 self.loadSplashApplovin()
@@ -93,7 +93,7 @@ class SplashVC: UIViewController {
     
     private func timerStartErrorConsent() {
         let splTimeOut = UserDefaults.standard.integer(forKey: "splash-timeout")
-        self.timeLoading = splTimeOut > 0 ? splTimeOut : 15
+        self.timeLoading = splTimeOut > 0 ? splTimeOut : 20
         
         if ApplovinHandle.shared.isReady {
             self.loadSplashApplovin()
@@ -122,8 +122,7 @@ class SplashVC: UIViewController {
                 self.admobSplash = ad
                 self.admobSplash?.fullScreenContentDelegate = self
                 self.admobSplash?.present(fromRootViewController: self)
-            }
-            else {
+            } else {
                 self.isLoadSuccess = true
                 self.admobSplash = nil
                 self.openTabView()
@@ -154,8 +153,7 @@ class SplashVC: UIViewController {
             if DataCommonModel.shared.openRatingView {
                 MGenreVM.shared.loadData()
                 TVSGenreVM.shared.loadData()
-                let naviSeen = UINavigationController(rootViewController: MController())
-                UIWindow.keyWindow?.rootViewController = naviSeen
+                self.navigationController?.pushViewController(MController(), animated: true)
                 return
             } else {
                 self.navigationController?.pushViewController(MainVC(), animated: true)

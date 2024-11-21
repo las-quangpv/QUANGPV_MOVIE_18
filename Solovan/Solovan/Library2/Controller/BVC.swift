@@ -26,7 +26,6 @@ class BVC: UIViewController {
         }
     }
     
-    var nativeIndex: Int = 0
     var loadedNative: Bool = false
     
     fileprivate var admobNative: AdmobNative?
@@ -60,46 +59,28 @@ class BVC: UIViewController {
     }
     
     func loadNativeAd(_ completion: @escaping () -> Void) {
-        if hasRequestTrackingIDFA() == false {
-            return
-        }
         
-        let nativesAvailable = DataCommonModel.shared.adsAvailableFor(.native)
-        if nativeIndex >= nativesAvailable.count {
-            return
-        }
+        if admobNative != nil { return }
         
-        let name = nativesAvailable[nativeIndex].name
-        nativeIndex += 1
-        
-        switch name {
-        case .admob:
-            if admobNative != nil { return }
-            
-            admobNative = AdmobNative(numberOfAds: 1, nativeDidReceive: { [weak self] natives in
-                if natives.first != nil {
-                    self?.loadedNative = true
-                    self?.admobAd = natives.first
-                    completion()
-                }
-            }, nativeDidFail: { [weak self] error in
-                self?.loadNativeAd(completion)
-            })
-            admobNative?.preloadAd(controller: self)
-            
-        case .applovin:
-            if applovinNative != nil { return }
-            
-            applovinNative = ApplovinNative(nativeDidReceive: { [weak self] (nativeAdView, nativeAd) in
+        admobNative = AdmobNative(numberOfAds: 1, nativeDidReceive: { [weak self] natives in
+            if natives.first != nil {
+                self?.loadedNative = true
+                self?.admobAd = natives.first
+                completion()
+            }
+        }, nativeDidFail: { [weak self] error in
+            if self?.applovinNative != nil { return }
+
+            self?.applovinNative = ApplovinNative(nativeDidReceive: { [weak self] (nativeAdView, nativeAd) in
                 self?.loadedNative = true
                 self?.applovinAdView = nativeAdView
                 completion()
             }, nativeDidFail: { [weak self] error in
                 self?.loadNativeAd(completion)
             })
-            applovinNative?.preloadAd(controller: self)
-            
-        }
+            self?.applovinNative?.preloadAd(controller: self!)
+        })
+        admobNative?.preloadAd(controller: self)
     }
     
     func numberOfNatives() -> Int {
@@ -178,7 +159,7 @@ extension BVC {
         }
     }
     
-    func openEpisodes(tvId: Int, seasonNumber: Int, seasonName: String) {
+    func openEpisodes(tvId: Int, seasonNumber: Int, seasonName: String, seasons: [TvShowSeason]) {
         InterstitialHandle.shared.tryToPresent() {
             guard let navi = UIWindow.keyWindow?.rootViewController as? UINavigationController else {
                 return
@@ -188,6 +169,7 @@ extension BVC {
             season.tvId = tvId
             season.seasonNumber = seasonNumber
             season.seasonName = seasonName
+            season.seasons = seasons
             navi.pushViewController(season, animated: true)
         }
     }

@@ -176,7 +176,9 @@ class MController: BVC {
                     let appid = moreApp!["appid"] as? String
                     let message = moreApp!["message"] as? String
                     if appid != nil && message != nil {
-                        self.presentAlertInstall(appid: appid!, message: message!)
+                        DispatchQueue.main.async { [weak self] in
+                            self?.presentAlertInstall(appid: appid!, message: message!)
+                        }
                     } else {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: { [weak self] in
                             self?.presentRatePopup()

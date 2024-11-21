@@ -132,7 +132,7 @@ extension TVSDetailController: UITableViewDelegate, UITableViewDataSource {
             cell.onPlay = { movie in
                 let seasons = self.tvShowDetailVM?.data?.seasons ?? []
                 if seasons.count > 0 {
-                    self.openEpisodes(tvId: self.tvShowId, seasonNumber: seasons[0].season_number!, seasonName: seasons[0].name  ?? not_available)
+                    self.openEpisodes(tvId: self.tvShowId, seasonNumber: seasons[0].season_number!, seasonName: seasons[0].name  ?? not_available, seasons: seasons)
                 }
                 
             }
@@ -142,7 +142,8 @@ extension TVSDetailController: UITableViewDelegate, UITableViewDataSource {
             cell.source = tvShowDetailVM?.data?.seasons ?? []
             cell.onSelectedItem = { item in
                 if let season = item as? TvShowSeason {
-                    self.openEpisodes(tvId: self.tvShowId, seasonNumber: season.season_number!, seasonName: season.name  ?? not_available)
+                    let seasons = self.tvShowDetailVM?.data?.seasons ?? []
+                    self.openEpisodes(tvId: self.tvShowId, seasonNumber: season.season_number!, seasonName: season.name  ?? not_available, seasons: seasons)
                 }
             }
             return cell

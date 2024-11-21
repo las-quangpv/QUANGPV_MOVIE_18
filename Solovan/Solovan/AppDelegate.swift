@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         if DataCommonModel.shared.openRatingView {
-            AdmobOpenHandle.shared.tryToPresent { success in
+            AdmobOpenHandle.shared.tryToPresent() { success in
                 if !success {
                     ApplovinOpenHandle.shared.tryToPresent()
                 }

@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7406DB782CD5C33300068590 /* AppLovinNativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB612CD5C33300068590 /* AppLovinNativeAdCell.swift */; };
+		7406DB792CD5C33300068590 /* AdmobNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7406DB622CD5C33300068590 /* AdmobNativeAdView.xib */; };
+		7406DB7A2CD5C33300068590 /* AppLovinNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB632CD5C33300068590 /* AppLovinNativeAdView.swift */; };
+		7406DB7B2CD5C33300068590 /* AppLovinNativeAdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB642CD5C33300068590 /* AppLovinNativeAdTableCell.swift */; };
+		7406DB7C2CD5C33300068590 /* AdmobNativeAdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB652CD5C33300068590 /* AdmobNativeAdTableCell.swift */; };
+		7406DB7D2CD5C33300068590 /* AdmobNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB662CD5C33300068590 /* AdmobNativeAdView.swift */; };
+		7406DB7E2CD5C33300068590 /* NativeAdStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB672CD5C33300068590 /* NativeAdStyle.swift */; };
+		7406DB7F2CD5C33300068590 /* AdmobNativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB682CD5C33300068590 /* AdmobNativeAdCell.swift */; };
+		7406DB802CD5C33300068590 /* ApplovinOpenHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB6A2CD5C33300068590 /* ApplovinOpenHandle.swift */; };
+		7406DB812CD5C33300068590 /* ApplovinHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB6B2CD5C33300068590 /* ApplovinHandle.swift */; };
+		7406DB822CD5C33300068590 /* ApplovinInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB6C2CD5C33300068590 /* ApplovinInterstitial.swift */; };
+		7406DB832CD5C33300068590 /* ApplovinNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB6D2CD5C33300068590 /* ApplovinNative.swift */; };
+		7406DB842CD5C33300068590 /* ApplovinReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB6E2CD5C33300068590 /* ApplovinReward.swift */; };
+		7406DB852CD5C33300068590 /* AdmobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB702CD5C33300068590 /* AdmobInterstitial.swift */; };
+		7406DB862CD5C33300068590 /* AdmobHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB712CD5C33300068590 /* AdmobHandle.swift */; };
+		7406DB872CD5C33300068590 /* AdmobOpenHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB722CD5C33300068590 /* AdmobOpenHandle.swift */; };
+		7406DB882CD5C33300068590 /* BaseInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB732CD5C33300068590 /* BaseInterstitial.swift */; };
+		7406DB892CD5C33300068590 /* AdmobBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB742CD5C33300068590 /* AdmobBanner.swift */; };
+		7406DB8A2CD5C33300068590 /* AdmobNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB752CD5C33300068590 /* AdmobNative.swift */; };
+		7406DB8B2CD5C33300068590 /* AdmobReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB762CD5C33300068590 /* AdmobReward.swift */; };
+		7406DB8C2CD5C33300068590 /* InterstitialHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406DB772CD5C33300068590 /* InterstitialHandle.swift */; };
 		741986572CB1720800DF26C0 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741986552CB1720800DF26C0 /* SplashVC.swift */; };
 		741986582CB1720800DF26C0 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741986562CB1720800DF26C0 /* SplashVC.xib */; };
 		742390522C8F2ABE00032EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742390512C8F2ABE00032EC7 /* Assets.xcassets */; };
 		742390552C8F2ABE00032EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742390532C8F2ABE00032EC7 /* LaunchScreen.storyboard */; };
-		74A15D852CB6B90C00F0D7F4 /* AppLovinNativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C802CB6B90C00F0D7F4 /* AppLovinNativeAdCell.swift */; };
-		74A15D862CB6B90C00F0D7F4 /* AdmobNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A15C812CB6B90C00F0D7F4 /* AdmobNativeAdView.xib */; };
-		74A15D872CB6B90C00F0D7F4 /* AppLovinNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C822CB6B90C00F0D7F4 /* AppLovinNativeAdView.swift */; };
-		74A15D882CB6B90C00F0D7F4 /* AppLovinNativeAdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C832CB6B90C00F0D7F4 /* AppLovinNativeAdTableCell.swift */; };
-		74A15D892CB6B90C00F0D7F4 /* AdmobNativeAdTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C842CB6B90C00F0D7F4 /* AdmobNativeAdTableCell.swift */; };
-		74A15D8A2CB6B90C00F0D7F4 /* AdmobNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C852CB6B90C00F0D7F4 /* AdmobNativeAdView.swift */; };
-		74A15D8B2CB6B90C00F0D7F4 /* NativeAdStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C862CB6B90C00F0D7F4 /* NativeAdStyle.swift */; };
-		74A15D8C2CB6B90C00F0D7F4 /* AdmobNativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C872CB6B90C00F0D7F4 /* AdmobNativeAdCell.swift */; };
-		74A15D8D2CB6B90C00F0D7F4 /* ApplovinOpenHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C892CB6B90C00F0D7F4 /* ApplovinOpenHandle.swift */; };
-		74A15D8E2CB6B90C00F0D7F4 /* ApplovinHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C8A2CB6B90C00F0D7F4 /* ApplovinHandle.swift */; };
-		74A15D8F2CB6B90C00F0D7F4 /* ApplovinInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C8B2CB6B90C00F0D7F4 /* ApplovinInterstitial.swift */; };
-		74A15D902CB6B90C00F0D7F4 /* ApplovinNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C8C2CB6B90C00F0D7F4 /* ApplovinNative.swift */; };
-		74A15D912CB6B90C00F0D7F4 /* ApplovinReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C8D2CB6B90C00F0D7F4 /* ApplovinReward.swift */; };
-		74A15D922CB6B90C00F0D7F4 /* AdmobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C8F2CB6B90C00F0D7F4 /* AdmobInterstitial.swift */; };
-		74A15D932CB6B90C00F0D7F4 /* AdmobHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C902CB6B90C00F0D7F4 /* AdmobHandle.swift */; };
-		74A15D942CB6B90C00F0D7F4 /* AdmobOpenHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C912CB6B90C00F0D7F4 /* AdmobOpenHandle.swift */; };
-		74A15D952CB6B90C00F0D7F4 /* BaseInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C922CB6B90C00F0D7F4 /* BaseInterstitial.swift */; };
-		74A15D962CB6B90C00F0D7F4 /* AdmobBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C932CB6B90C00F0D7F4 /* AdmobBanner.swift */; };
-		74A15D972CB6B90C00F0D7F4 /* AdmobNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C942CB6B90C00F0D7F4 /* AdmobNative.swift */; };
-		74A15D982CB6B90C00F0D7F4 /* AdmobReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C952CB6B90C00F0D7F4 /* AdmobReward.swift */; };
-		74A15D992CB6B90C00F0D7F4 /* InterstitialHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C962CB6B90C00F0D7F4 /* InterstitialHandle.swift */; };
 		74A15D9A2CB6B90C00F0D7F4 /* MDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C992CB6B90C00F0D7F4 /* MDetailVM.swift */; };
 		74A15D9B2CB6B90C00F0D7F4 /* MNowPlayingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C9A2CB6B90C00F0D7F4 /* MNowPlayingVM.swift */; };
 		74A15D9C2CB6B90C00F0D7F4 /* MUpcomingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A15C9B2CB6B90C00F0D7F4 /* MUpcomingVM.swift */; };
@@ -339,33 +339,33 @@
 /* Begin PBXFileReference section */
 		00A25A7DFAAFA7162FDE91CA /* Pods-Solovan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solovan.release.xcconfig"; path = "Target Support Files/Pods-Solovan/Pods-Solovan.release.xcconfig"; sourceTree = "<group>"; };
 		6F427B7F211DDA5C8F491ED0 /* Pods-Solovan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solovan.debug.xcconfig"; path = "Target Support Files/Pods-Solovan/Pods-Solovan.debug.xcconfig"; sourceTree = "<group>"; };
+		7406DB612CD5C33300068590 /* AppLovinNativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdCell.swift; sourceTree = "<group>"; };
+		7406DB622CD5C33300068590 /* AdmobNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdmobNativeAdView.xib; sourceTree = "<group>"; };
+		7406DB632CD5C33300068590 /* AppLovinNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdView.swift; sourceTree = "<group>"; };
+		7406DB642CD5C33300068590 /* AppLovinNativeAdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdTableCell.swift; sourceTree = "<group>"; };
+		7406DB652CD5C33300068590 /* AdmobNativeAdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdTableCell.swift; sourceTree = "<group>"; };
+		7406DB662CD5C33300068590 /* AdmobNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdView.swift; sourceTree = "<group>"; };
+		7406DB672CD5C33300068590 /* NativeAdStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdStyle.swift; sourceTree = "<group>"; };
+		7406DB682CD5C33300068590 /* AdmobNativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdCell.swift; sourceTree = "<group>"; };
+		7406DB6A2CD5C33300068590 /* ApplovinOpenHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinOpenHandle.swift; sourceTree = "<group>"; };
+		7406DB6B2CD5C33300068590 /* ApplovinHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinHandle.swift; sourceTree = "<group>"; };
+		7406DB6C2CD5C33300068590 /* ApplovinInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinInterstitial.swift; sourceTree = "<group>"; };
+		7406DB6D2CD5C33300068590 /* ApplovinNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinNative.swift; sourceTree = "<group>"; };
+		7406DB6E2CD5C33300068590 /* ApplovinReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinReward.swift; sourceTree = "<group>"; };
+		7406DB702CD5C33300068590 /* AdmobInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobInterstitial.swift; sourceTree = "<group>"; };
+		7406DB712CD5C33300068590 /* AdmobHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobHandle.swift; sourceTree = "<group>"; };
+		7406DB722CD5C33300068590 /* AdmobOpenHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobOpenHandle.swift; sourceTree = "<group>"; };
+		7406DB732CD5C33300068590 /* BaseInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInterstitial.swift; sourceTree = "<group>"; };
+		7406DB742CD5C33300068590 /* AdmobBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobBanner.swift; sourceTree = "<group>"; };
+		7406DB752CD5C33300068590 /* AdmobNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNative.swift; sourceTree = "<group>"; };
+		7406DB762CD5C33300068590 /* AdmobReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobReward.swift; sourceTree = "<group>"; };
+		7406DB772CD5C33300068590 /* InterstitialHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialHandle.swift; sourceTree = "<group>"; };
 		741986552CB1720800DF26C0 /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		741986562CB1720800DF26C0 /* SplashVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		742390452C8F2ABC00032EC7 /* Solovan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solovan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		742390512C8F2ABE00032EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		742390542C8F2ABE00032EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		742390562C8F2ABE00032EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74A15C802CB6B90C00F0D7F4 /* AppLovinNativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdCell.swift; sourceTree = "<group>"; };
-		74A15C812CB6B90C00F0D7F4 /* AdmobNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdmobNativeAdView.xib; sourceTree = "<group>"; };
-		74A15C822CB6B90C00F0D7F4 /* AppLovinNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdView.swift; sourceTree = "<group>"; };
-		74A15C832CB6B90C00F0D7F4 /* AppLovinNativeAdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLovinNativeAdTableCell.swift; sourceTree = "<group>"; };
-		74A15C842CB6B90C00F0D7F4 /* AdmobNativeAdTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdTableCell.swift; sourceTree = "<group>"; };
-		74A15C852CB6B90C00F0D7F4 /* AdmobNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdView.swift; sourceTree = "<group>"; };
-		74A15C862CB6B90C00F0D7F4 /* NativeAdStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdStyle.swift; sourceTree = "<group>"; };
-		74A15C872CB6B90C00F0D7F4 /* AdmobNativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdCell.swift; sourceTree = "<group>"; };
-		74A15C892CB6B90C00F0D7F4 /* ApplovinOpenHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinOpenHandle.swift; sourceTree = "<group>"; };
-		74A15C8A2CB6B90C00F0D7F4 /* ApplovinHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinHandle.swift; sourceTree = "<group>"; };
-		74A15C8B2CB6B90C00F0D7F4 /* ApplovinInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinInterstitial.swift; sourceTree = "<group>"; };
-		74A15C8C2CB6B90C00F0D7F4 /* ApplovinNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinNative.swift; sourceTree = "<group>"; };
-		74A15C8D2CB6B90C00F0D7F4 /* ApplovinReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplovinReward.swift; sourceTree = "<group>"; };
-		74A15C8F2CB6B90C00F0D7F4 /* AdmobInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobInterstitial.swift; sourceTree = "<group>"; };
-		74A15C902CB6B90C00F0D7F4 /* AdmobHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobHandle.swift; sourceTree = "<group>"; };
-		74A15C912CB6B90C00F0D7F4 /* AdmobOpenHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobOpenHandle.swift; sourceTree = "<group>"; };
-		74A15C922CB6B90C00F0D7F4 /* BaseInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInterstitial.swift; sourceTree = "<group>"; };
-		74A15C932CB6B90C00F0D7F4 /* AdmobBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobBanner.swift; sourceTree = "<group>"; };
-		74A15C942CB6B90C00F0D7F4 /* AdmobNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobNative.swift; sourceTree = "<group>"; };
-		74A15C952CB6B90C00F0D7F4 /* AdmobReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobReward.swift; sourceTree = "<group>"; };
-		74A15C962CB6B90C00F0D7F4 /* InterstitialHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialHandle.swift; sourceTree = "<group>"; };
 		74A15C992CB6B90C00F0D7F4 /* MDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDetailVM.swift; sourceTree = "<group>"; };
 		74A15C9A2CB6B90C00F0D7F4 /* MNowPlayingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNowPlayingVM.swift; sourceTree = "<group>"; };
 		74A15C9B2CB6B90C00F0D7F4 /* MUpcomingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUpcomingVM.swift; sourceTree = "<group>"; };
@@ -683,6 +683,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7406DB5F2CD5C33300068590 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				7406DB602CD5C33300068590 /* NativeAd */,
+				7406DB692CD5C33300068590 /* Applovin */,
+				7406DB6F2CD5C33300068590 /* Admob */,
+				7406DB772CD5C33300068590 /* InterstitialHandle.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		7406DB602CD5C33300068590 /* NativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				7406DB612CD5C33300068590 /* AppLovinNativeAdCell.swift */,
+				7406DB622CD5C33300068590 /* AdmobNativeAdView.xib */,
+				7406DB632CD5C33300068590 /* AppLovinNativeAdView.swift */,
+				7406DB642CD5C33300068590 /* AppLovinNativeAdTableCell.swift */,
+				7406DB652CD5C33300068590 /* AdmobNativeAdTableCell.swift */,
+				7406DB662CD5C33300068590 /* AdmobNativeAdView.swift */,
+				7406DB672CD5C33300068590 /* NativeAdStyle.swift */,
+				7406DB682CD5C33300068590 /* AdmobNativeAdCell.swift */,
+			);
+			path = NativeAd;
+			sourceTree = "<group>";
+		};
+		7406DB692CD5C33300068590 /* Applovin */ = {
+			isa = PBXGroup;
+			children = (
+				7406DB6A2CD5C33300068590 /* ApplovinOpenHandle.swift */,
+				7406DB6B2CD5C33300068590 /* ApplovinHandle.swift */,
+				7406DB6C2CD5C33300068590 /* ApplovinInterstitial.swift */,
+				7406DB6D2CD5C33300068590 /* ApplovinNative.swift */,
+				7406DB6E2CD5C33300068590 /* ApplovinReward.swift */,
+			);
+			path = Applovin;
+			sourceTree = "<group>";
+		};
+		7406DB6F2CD5C33300068590 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				7406DB702CD5C33300068590 /* AdmobInterstitial.swift */,
+				7406DB712CD5C33300068590 /* AdmobHandle.swift */,
+				7406DB722CD5C33300068590 /* AdmobOpenHandle.swift */,
+				7406DB732CD5C33300068590 /* BaseInterstitial.swift */,
+				7406DB742CD5C33300068590 /* AdmobBanner.swift */,
+				7406DB752CD5C33300068590 /* AdmobNative.swift */,
+				7406DB762CD5C33300068590 /* AdmobReward.swift */,
+			);
+			path = Admob;
+			sourceTree = "<group>";
+		};
 		7423903C2C8F2ABC00032EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -725,7 +777,7 @@
 		74A15C7D2CB6B90C00F0D7F4 /* Library2 */ = {
 			isa = PBXGroup;
 			children = (
-				74A15C7E2CB6B90C00F0D7F4 /* Ads */,
+				7406DB5F2CD5C33300068590 /* Ads */,
 				74A15C972CB6B90C00F0D7F4 /* ViewModels */,
 				74A15CB52CB6B90C00F0D7F4 /* Cells */,
 				74A15D092CB6B90C00F0D7F4 /* CorePlayer */,
@@ -738,58 +790,6 @@
 				74A15D822CB6B90C00F0D7F4 /* Fonts */,
 			);
 			path = Library2;
-			sourceTree = "<group>";
-		};
-		74A15C7E2CB6B90C00F0D7F4 /* Ads */ = {
-			isa = PBXGroup;
-			children = (
-				74A15C7F2CB6B90C00F0D7F4 /* NativeAd */,
-				74A15C882CB6B90C00F0D7F4 /* Applovin */,
-				74A15C8E2CB6B90C00F0D7F4 /* Admob */,
-				74A15C962CB6B90C00F0D7F4 /* InterstitialHandle.swift */,
-			);
-			path = Ads;
-			sourceTree = "<group>";
-		};
-		74A15C7F2CB6B90C00F0D7F4 /* NativeAd */ = {
-			isa = PBXGroup;
-			children = (
-				74A15C802CB6B90C00F0D7F4 /* AppLovinNativeAdCell.swift */,
-				74A15C812CB6B90C00F0D7F4 /* AdmobNativeAdView.xib */,
-				74A15C822CB6B90C00F0D7F4 /* AppLovinNativeAdView.swift */,
-				74A15C832CB6B90C00F0D7F4 /* AppLovinNativeAdTableCell.swift */,
-				74A15C842CB6B90C00F0D7F4 /* AdmobNativeAdTableCell.swift */,
-				74A15C852CB6B90C00F0D7F4 /* AdmobNativeAdView.swift */,
-				74A15C862CB6B90C00F0D7F4 /* NativeAdStyle.swift */,
-				74A15C872CB6B90C00F0D7F4 /* AdmobNativeAdCell.swift */,
-			);
-			path = NativeAd;
-			sourceTree = "<group>";
-		};
-		74A15C882CB6B90C00F0D7F4 /* Applovin */ = {
-			isa = PBXGroup;
-			children = (
-				74A15C892CB6B90C00F0D7F4 /* ApplovinOpenHandle.swift */,
-				74A15C8A2CB6B90C00F0D7F4 /* ApplovinHandle.swift */,
-				74A15C8B2CB6B90C00F0D7F4 /* ApplovinInterstitial.swift */,
-				74A15C8C2CB6B90C00F0D7F4 /* ApplovinNative.swift */,
-				74A15C8D2CB6B90C00F0D7F4 /* ApplovinReward.swift */,
-			);
-			path = Applovin;
-			sourceTree = "<group>";
-		};
-		74A15C8E2CB6B90C00F0D7F4 /* Admob */ = {
-			isa = PBXGroup;
-			children = (
-				74A15C8F2CB6B90C00F0D7F4 /* AdmobInterstitial.swift */,
-				74A15C902CB6B90C00F0D7F4 /* AdmobHandle.swift */,
-				74A15C912CB6B90C00F0D7F4 /* AdmobOpenHandle.swift */,
-				74A15C922CB6B90C00F0D7F4 /* BaseInterstitial.swift */,
-				74A15C932CB6B90C00F0D7F4 /* AdmobBanner.swift */,
-				74A15C942CB6B90C00F0D7F4 /* AdmobNative.swift */,
-				74A15C952CB6B90C00F0D7F4 /* AdmobReward.swift */,
-			);
-			path = Admob;
 			sourceTree = "<group>";
 		};
 		74A15C972CB6B90C00F0D7F4 /* ViewModels */ = {
@@ -1493,6 +1493,7 @@
 				74DA92A82CAC5810006C06E3 /* TagItemCell.xib in Resources */,
 				74DA92A12CAC5810006C06E3 /* FileCell.xib in Resources */,
 				74A15E682CB6B90C00F0D7F4 /* LexendDeca-VariableFont_wght.ttf in Resources */,
+				7406DB792CD5C33300068590 /* AdmobNativeAdView.xib in Resources */,
 				74DA92732CAC580F006C06E3 /* NewTagsPopupVC.xib in Resources */,
 				74A15DEF2CB6B90C00F0D7F4 /* MyPlayListCell.xib in Resources */,
 				74DA92AD2CAC5810006C06E3 /* TagCell.xib in Resources */,
@@ -1511,7 +1512,6 @@
 				74A15DDF2CB6B90C00F0D7F4 /* TVSPopularItemCell.xib in Resources */,
 				74DA92B32CAC5810006C06E3 /* ColorView.xib in Resources */,
 				74DA92A02CAC5810006C06E3 /* PlayListCell.xib in Resources */,
-				74A15D862CB6B90C00F0D7F4 /* AdmobNativeAdView.xib in Resources */,
 				74DA92C42CAC5810006C06E3 /* IconView.xib in Resources */,
 				74A15DDA2CB6B90C00F0D7F4 /* TVSTrendingItemCell.xib in Resources */,
 				74A15DE92CB6B90C00F0D7F4 /* DetailSeasonCell.xib in Resources */,
@@ -1622,8 +1622,6 @@
 				74A15DB22CB6B90C00F0D7F4 /* PDetailVM.swift in Sources */,
 				74DA92942CAC5810006C06E3 /* SaveVideoModel.swift in Sources */,
 				74A15E112CB6B90C00F0D7F4 /* ZemPlayerMediaTrack.swift in Sources */,
-				74A15D962CB6B90C00F0D7F4 /* AdmobBanner.swift in Sources */,
-				74A15D922CB6B90C00F0D7F4 /* AdmobInterstitial.swift in Sources */,
 				74DA92812CAC580F006C06E3 /* FilterVideoVC.swift in Sources */,
 				74DA92B52CAC5810006C06E3 /* VideoTrimmerThumb.swift in Sources */,
 				74DA92C22CAC5810006C06E3 /* SelectedColorView.swift in Sources */,
@@ -1635,6 +1633,7 @@
 				74A15E312CB6B90C00F0D7F4 /* ActingHistory.swift in Sources */,
 				74A15DD62CB6B90C00F0D7F4 /* PDetailCell.swift in Sources */,
 				74A15E2B2CB6B90C00F0D7F4 /* FSPageControl.swift in Sources */,
+				7406DB8C2CD5C33300068590 /* InterstitialHandle.swift in Sources */,
 				74A15DBC2CB6B90C00F0D7F4 /* MCategoryCell.swift in Sources */,
 				74A15DDC2CB6B90C00F0D7F4 /* TVSTrendingItemCell.swift in Sources */,
 				74A15E5A2CB6B90C00F0D7F4 /* Define.swift in Sources */,
@@ -1644,15 +1643,14 @@
 				74A15DB12CB6B90C00F0D7F4 /* PCreditVM.swift in Sources */,
 				74DA929D2CAC5810006C06E3 /* FileCell.swift in Sources */,
 				74DA92832CAC580F006C06E3 /* DetailPlayListVC.swift in Sources */,
+				7406DB7D2CD5C33300068590 /* AdmobNativeAdView.swift in Sources */,
 				74A15E172CB6B90C00F0D7F4 /* ZemPlayerControlsCoordinator.swift in Sources */,
 				74A15E5F2CB6B90C00F0D7F4 /* APIService.swift in Sources */,
 				74A15DA12CB6B90C00F0D7F4 /* MByGenreVM.swift in Sources */,
 				74A15E492CB6B90C00F0D7F4 /* PDetailController.swift in Sources */,
-				74A15D952CB6B90C00F0D7F4 /* BaseInterstitial.swift in Sources */,
 				74A15E4B2CB6B90C00F0D7F4 /* MyPlayListController.swift in Sources */,
 				74A15E552CB6B90C00F0D7F4 /* PController.swift in Sources */,
 				74DA92BB2CAC5810006C06E3 /* EnterTextView.swift in Sources */,
-				74A15D8E2CB6B90C00F0D7F4 /* ApplovinHandle.swift in Sources */,
 				74DA92B12CAC5810006C06E3 /* IconView.swift in Sources */,
 				74DA92842CAC5810006C06E3 /* DetailMovieVC.swift in Sources */,
 				74A15DCA2CB6B90C00F0D7F4 /* MComingItemCell.swift in Sources */,
@@ -1662,9 +1660,7 @@
 				74A15E5D2CB6B90C00F0D7F4 /* LoadingView.swift in Sources */,
 				74A15E232CB6B90C00F0D7F4 /* SubtitleModel.swift in Sources */,
 				74DA92C32CAC5810006C06E3 /* TagsFlowLayout.swift in Sources */,
-				74A15D8D2CB6B90C00F0D7F4 /* ApplovinOpenHandle.swift in Sources */,
 				74A15E0A2CB6B90C00F0D7F4 /* WebVTT.swift in Sources */,
-				74A15D882CB6B90C00F0D7F4 /* AppLovinNativeAdTableCell.swift in Sources */,
 				74A15DA82CB6B90C00F0D7F4 /* TVSPopularVM.swift in Sources */,
 				74A15DDD2CB6B90C00F0D7F4 /* TVSTopRatedCell.swift in Sources */,
 				74A15E2E2CB6B90C00F0D7F4 /* FSPagerCollectionView.swift in Sources */,
@@ -1677,9 +1673,7 @@
 				74DA92702CAC580F006C06E3 /* MorePopupVC.swift in Sources */,
 				74A15DB92CB6B90C00F0D7F4 /* MPopularCell.swift in Sources */,
 				74A15DD32CB6B90C00F0D7F4 /* ActingHisItemCell.swift in Sources */,
-				74A15D992CB6B90C00F0D7F4 /* InterstitialHandle.swift in Sources */,
 				74A15E0C2CB6B90C00F0D7F4 /* ZemPlayerView.swift in Sources */,
-				74A15D872CB6B90C00F0D7F4 /* AppLovinNativeAdView.swift in Sources */,
 				74DA92A22CAC5810006C06E3 /* MovieCell.swift in Sources */,
 				74A15DE72CB6B90C00F0D7F4 /* RecentSearchItemCell.swift in Sources */,
 				74A15DE22CB6B90C00F0D7F4 /* TVSTrendingCell.swift in Sources */,
@@ -1697,12 +1691,13 @@
 				74DA92712CAC580F006C06E3 /* NewTagsPopupVC.swift in Sources */,
 				74A15E372CB6B90C00F0D7F4 /* People.swift in Sources */,
 				74DA929A2CAC5810006C06E3 /* PlaylistModel.swift in Sources */,
+				7406DB852CD5C33300068590 /* AdmobInterstitial.swift in Sources */,
 				74A15E422CB6B90C00F0D7F4 /* CategoryController.swift in Sources */,
+				7406DB842CD5C33300068590 /* ApplovinReward.swift in Sources */,
+				7406DB832CD5C33300068590 /* ApplovinNative.swift in Sources */,
 				74A15DA32CB6B90C00F0D7F4 /* TVSTopRatedVM.swift in Sources */,
 				74A15DA42CB6B90C00F0D7F4 /* TVSByGenreVM.swift in Sources */,
-				74A15D8C2CB6B90C00F0D7F4 /* AdmobNativeAdCell.swift in Sources */,
 				74A15DBE2CB6B90C00F0D7F4 /* PPopularItemCell.swift in Sources */,
-				74A15D942CB6B90C00F0D7F4 /* AdmobOpenHandle.swift in Sources */,
 				74A15E0F2CB6B90C00F0D7F4 /* ZemPlayerItem.swift in Sources */,
 				74DA92AC2CAC5810006C06E3 /* MyVideoAICell.swift in Sources */,
 				74A15E252CB6B90C00F0D7F4 /* FSPageViewTransformer.swift in Sources */,
@@ -1727,15 +1722,13 @@
 				74A15E082CB6B90C00F0D7F4 /* WebVTTParser.swift in Sources */,
 				74A15DA62CB6B90C00F0D7F4 /* TVSOnTheAirVM.swift in Sources */,
 				74A15E362CB6B90C00F0D7F4 /* DataCommonObject.swift in Sources */,
-				74A15D972CB6B90C00F0D7F4 /* AdmobNative.swift in Sources */,
 				74A15DA02CB6B90C00F0D7F4 /* MSearchVM.swift in Sources */,
 				74DA92982CAC5810006C06E3 /* FileSaveFDFModel.swift in Sources */,
 				74DA92962CAC5810006C06E3 /* ColorModel.swift in Sources */,
 				74A15E0E2CB6B90C00F0D7F4 /* ZemPlayerPlaybackDelegate.swift in Sources */,
-				74A15D8B2CB6B90C00F0D7F4 /* NativeAdStyle.swift in Sources */,
-				74A15D932CB6B90C00F0D7F4 /* AdmobHandle.swift in Sources */,
 				74A15E3E2CB6B90C00F0D7F4 /* ViewAllController.swift in Sources */,
 				74A15E122CB6B90C00F0D7F4 /* ZemPlayerController.swift in Sources */,
+				7406DB7A2CD5C33300068590 /* AppLovinNativeAdView.swift in Sources */,
 				74DA929F2CAC5810006C06E3 /* PlayListCell.swift in Sources */,
 				74A15E052CB6B90C00F0D7F4 /* HTMLCharacterReferences.swift in Sources */,
 				74A15DC22CB6B90C00F0D7F4 /* MCategoryItemCell.swift in Sources */,
@@ -1749,6 +1742,7 @@
 				74A15DD02CB6B90C00F0D7F4 /* PKnownForCell.swift in Sources */,
 				74A15DCF2CB6B90C00F0D7F4 /* ActingHisCell.swift in Sources */,
 				74DA92A52CAC5810006C06E3 /* FilterVideoCell.swift in Sources */,
+				7406DB822CD5C33300068590 /* ApplovinInterstitial.swift in Sources */,
 				74A15E4F2CB6B90C00F0D7F4 /* SeasonDetailController.swift in Sources */,
 				74DA926D2CAC580F006C06E3 /* AppDelegate.swift in Sources */,
 				74A15E532CB6B90C00F0D7F4 /* MDetailController.swift in Sources */,
@@ -1770,7 +1764,9 @@
 				74A15DAC2CB6B90C00F0D7F4 /* TVSLatesVM.swift in Sources */,
 				74A15DF92CB6B90C00F0D7F4 /* MDetailOverViewCell.swift in Sources */,
 				74A15E5C2CB6B90C00F0D7F4 /* GradientView.swift in Sources */,
+				7406DB782CD5C33300068590 /* AppLovinNativeAdCell.swift in Sources */,
 				74A15E622CB6B90C00F0D7F4 /* DBService.swift in Sources */,
+				7406DB7C2CD5C33300068590 /* AdmobNativeAdTableCell.swift in Sources */,
 				74A15DE82CB6B90C00F0D7F4 /* RecentSearchCell.swift in Sources */,
 				74A15E1A2CB6B90C00F0D7F4 /* Utils.swift in Sources */,
 				74A15D9D2CB6B90C00F0D7F4 /* MGenreVM.swift in Sources */,
@@ -1780,34 +1776,37 @@
 				74DA92B82CAC5810006C06E3 /* VideoTrimmer.swift in Sources */,
 				74A15D9B2CB6B90C00F0D7F4 /* MNowPlayingVM.swift in Sources */,
 				741986572CB1720800DF26C0 /* SplashVC.swift in Sources */,
+				7406DB7B2CD5C33300068590 /* AppLovinNativeAdTableCell.swift in Sources */,
 				74A15D9C2CB6B90C00F0D7F4 /* MUpcomingVM.swift in Sources */,
 				74A15E142CB6B90C00F0D7F4 /* ZemPlayerGestureRecieverViewDelegate.swift in Sources */,
-				74A15D852CB6B90C00F0D7F4 /* AppLovinNativeAdCell.swift in Sources */,
 				74A15DD92CB6B90C00F0D7F4 /* TVSPopularItemCell.swift in Sources */,
 				74A15DA22CB6B90C00F0D7F4 /* MPopularVM.swift in Sources */,
 				74DA92BD2CAC5810006C06E3 /* ColorUtils.swift in Sources */,
-				74A15D8F2CB6B90C00F0D7F4 /* ApplovinInterstitial.swift in Sources */,
 				74A15E222CB6B90C00F0D7F4 /* StringExtension.swift in Sources */,
 				74A15DA52CB6B90C00F0D7F4 /* TVSDetailVM.swift in Sources */,
 				74A15E632CB6B90C00F0D7F4 /* PeopleAPI.swift in Sources */,
 				74A15E662CB6B90C00F0D7F4 /* BookmarkService.swift in Sources */,
+				7406DB8B2CD5C33300068590 /* AdmobReward.swift in Sources */,
 				74DA92822CAC580F006C06E3 /* PlayListVC.swift in Sources */,
+				7406DB882CD5C33300068590 /* BaseInterstitial.swift in Sources */,
 				74A15E022CB6B90C00F0D7F4 /* ExtensionCorePlayer.swift in Sources */,
 				74A15E322CB6B90C00F0D7F4 /* TvShow.swift in Sources */,
 				74A15DE62CB6B90C00F0D7F4 /* CommunityCell.swift in Sources */,
 				74A15E352CB6B90C00F0D7F4 /* LocalStorage.swift in Sources */,
+				7406DB872CD5C33300068590 /* AdmobOpenHandle.swift in Sources */,
 				74A15E3A2CB6B90C00F0D7F4 /* BVC.swift in Sources */,
 				74A15E202CB6B90C00F0D7F4 /* ChooseSubtitleView.swift in Sources */,
 				74DA92912CAC5810006C06E3 /* MainVC.swift in Sources */,
 				74DA92C62CAC5810006C06E3 /* Response.swift in Sources */,
 				74DA92BA2CAC5810006C06E3 /* ColorView.swift in Sources */,
+				7406DB7E2CD5C33300068590 /* NativeAdStyle.swift in Sources */,
 				74A15DEA2CB6B90C00F0D7F4 /* DetailSeasonCell.swift in Sources */,
 				74A15DFC2CB6B90C00F0D7F4 /* MDetailPosterCell.swift in Sources */,
 				74A15E652CB6B90C00F0D7F4 /* TvShowAPI.swift in Sources */,
-				74A15D892CB6B90C00F0D7F4 /* AdmobNativeAdTableCell.swift in Sources */,
 				74A15DFF2CB6B90C00F0D7F4 /* MenuCell.swift in Sources */,
+				7406DB802CD5C33300068590 /* ApplovinOpenHandle.swift in Sources */,
 				74A15DB42CB6B90C00F0D7F4 /* PListCell.swift in Sources */,
-				74A15D912CB6B90C00F0D7F4 /* ApplovinReward.swift in Sources */,
+				7406DB7F2CD5C33300068590 /* AdmobNativeAdCell.swift in Sources */,
 				74A15E2F2CB6B90C00F0D7F4 /* Movie.swift in Sources */,
 				74A15E272CB6B90C00F0D7F4 /* FSPagerViewCell.swift in Sources */,
 				74A15DF62CB6B90C00F0D7F4 /* MediaItemCell.swift in Sources */,
@@ -1822,7 +1821,6 @@
 				74A15DEB2CB6B90C00F0D7F4 /* TVSDetailSeasonCell.swift in Sources */,
 				74DA927B2CAC580F006C06E3 /* MovieVC.swift in Sources */,
 				74A15E192CB6B90C00F0D7F4 /* ApplicationHelper.swift in Sources */,
-				74A15D902CB6B90C00F0D7F4 /* ApplovinNative.swift in Sources */,
 				74A15DF42CB6B90C00F0D7F4 /* MDetailTopBillCell.swift in Sources */,
 				74DA92762CAC580F006C06E3 /* MyMovieVC.swift in Sources */,
 				74A15DC42CB6B90C00F0D7F4 /* PPopularCell.swift in Sources */,
@@ -1831,19 +1829,21 @@
 				74DA92802CAC580F006C06E3 /* SettingVC.swift in Sources */,
 				74DA92AA2CAC5810006C06E3 /* TagCell.swift in Sources */,
 				74A15D9F2CB6B90C00F0D7F4 /* MTopRatedVM.swift in Sources */,
+				7406DB862CD5C33300068590 /* AdmobHandle.swift in Sources */,
 				74DA926F2CAC580F006C06E3 /* VideoSelectPopupVC.swift in Sources */,
 				74A15E162CB6B90C00F0D7F4 /* ZemPlayerGestureRecieverView.swift in Sources */,
 				74DA92902CAC5810006C06E3 /* EditVideoVC.swift in Sources */,
 				74DA92C52CAC5810006C06E3 /* NetworkManager.swift in Sources */,
 				74A15DC12CB6B90C00F0D7F4 /* MTrendingCell.swift in Sources */,
-				74A15D8A2CB6B90C00F0D7F4 /* AdmobNativeAdView.swift in Sources */,
 				74A15E302CB6B90C00F0D7F4 /* Genre.swift in Sources */,
+				7406DB8A2CD5C33300068590 /* AdmobNative.swift in Sources */,
+				7406DB812CD5C33300068590 /* ApplovinHandle.swift in Sources */,
 				74A15E262CB6B90C00F0D7F4 /* SelectionDialog.swift in Sources */,
 				74DA92B62CAC5810006C06E3 /* BoderView.swift in Sources */,
 				74DA92B42CAC5810006C06E3 /* EmptyView.swift in Sources */,
 				74A15DA72CB6B90C00F0D7F4 /* TVSRecommendationVM.swift in Sources */,
 				74A15D9A2CB6B90C00F0D7F4 /* MDetailVM.swift in Sources */,
-				74A15D982CB6B90C00F0D7F4 /* AdmobReward.swift in Sources */,
+				7406DB892CD5C33300068590 /* AdmobBanner.swift in Sources */,
 				74DA92742CAC580F006C06E3 /* CreateVideoAI.swift in Sources */,
 				74A15E132CB6B90C00F0D7F4 /* ZemPlayerControls.swift in Sources */,
 			);

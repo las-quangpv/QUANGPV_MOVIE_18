@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidBecomeActive(_ scene: UIScene) {
         if DataCommonModel.shared.openRatingView {
-            AdmobOpenHandle.shared.tryToPresent { success in
+            AdmobOpenHandle.shared.tryToPresent() { success in
                 if !success {
                     ApplovinOpenHandle.shared.tryToPresent()
                 }
